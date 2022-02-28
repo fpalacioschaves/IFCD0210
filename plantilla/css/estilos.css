@@ -1,10 +1,10 @@
 *{
-    padding: 0;
     margin: 0;
 }
 
 body{
     margin: 0 20px 0 20px;
+    font-family: 'Roboto',  sans-serif;
 }
 
 header{
@@ -53,6 +53,8 @@ header{
 footer{
     height: 150px;
     border: 1px solid #ccc;
+    float: left;
+    width: 100%;
 }
 
 .footer1{
@@ -112,24 +114,24 @@ footer{
 }
 
 .container{
-    height: 100vh;
+    
     border: 1px solid #ccc;
+    display: flex;
 }
 
 .izquierda{
     width: 80%;
-    float: left;
-    height: 100%;
+    flex: 1;
 }
 
 .izquierda h1{
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
 .contenido{
     box-sizing: border-box;
-    height: 100%;
+    height: max-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -140,14 +142,65 @@ article{
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 30%;
-    height: 200px;
+    height: 250px;
+    margin: 1em 0;
+}
+
+.imagen{
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.titulo{
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contenido_article{
+    padding: 5px;
+}
+
+.leer_mas{
+    padding: 5px;
+    text-align: right;
 }
 
 aside{
     box-sizing: border-box;
     border: 1px solid #ccc;
     width: 20%;
-    float: left;
-    height: 100%;
 }
 
+aside h2{
+    font-size: 18px;
+}
+
+aside ul{
+    padding: 10px 25px;
+}
+
+.aside_block{
+    width: 90%;
+    padding: 20px 5px;
+    float: left;
+}
+/* Media Query para Móvil */
+@media screen and (max-width : 767px){
+    .menu_header{
+        display: none;
+    }
+
+    article{
+        width: 90%;
+    }
+}
+
+/* Media Query para Tablet */
+@media screen and (min-width : 768px) and (max-width: 1023px){
+    article{
+        width: 45%;
+    }
+
+}
