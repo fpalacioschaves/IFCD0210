@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <!-- Formulario GET -->
+    <form action="http://euroformac.totalh.net/php/form.php" method="get">
+        <!-- Checkbox -->
+        <fieldset>
+            <legend>Checkbox</legend>
+            Elige un valor:<br>
+            <input type="checkbox" name="checkbox1" id="checkbox1" value="1">
+            <label for="checkbox">Valor 1</label><br>
+            <input type="checkbox" name="checkbox2" id="checkbox2" value="2" checked>
+            <label for="checkbox">Valor 2</label><br>
+            <input type="checkbox" name="checkbox3" id="checkbox3" value="3">
+            <label for="checkbox">Valor 3</label>
+        </fieldset>
+        <!-- Color -->
+        <fieldset>
+            <legend>Color</legend>
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color">
+        </fieldset>
+        <!-- Date -->
+        <fieldset>
+            <legend>Date</legend>
+            <label for="date">Fecha:</label>
+            <input type="date" name="date" id="date">
+        </fieldset>
+        <!-- Datetime-Local -->
+        <fieldset>
+            <legend>Datetime-Local</legend>
+            <label for="datetimelocal">Fecha y Hora:</label>
+            <input type="datetime-local" name="datetimelocal" id="datetimelocal">
+        </fieldset>
+        <!-- Email -->
+        <fieldset>
+            <legend>Email</legend>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" id="email">
+        </fieldset>
+        <!-- File -->
+        <fieldset>
+            <legend>File</legend>
+            <label for="file">Fichero:</label>
+            <input type="file" name="file" id="file">
+        </fieldset>
+        <!-- Hidden -->
+        <fieldset>
+            <legend>Hidden</legend>
+            <input type="hidden" name="hidden" id="hidden" value="si">
+        </fieldset>
+        <!-- Image -->
+        <fieldset>
+            <legend>Image</legend>
+            <input type="image" src="https://cdn.joomla.org/images/Joomla_logo.png" alt="Logo Joomla!">
+        </fieldset>
+        <!-- Month -->
+        <fieldset>
+            <legend>Month</legend>
+            <label for="Month">Mes:</label>
+            <input type="month" name="month" id="month">
+        </fieldset>
+        <!-- Number -->
+        <fieldset>
+            <legend>Number</legend>
+            <label for="number">Número (0-100):</label>
+            <input type="number" name="number" id="number" min="0" max="100" step="10">
+        </fieldset>
+        <!-- Password -->
+        <fieldset>
+            <legend>Password</legend>
+            <label for="password">Contraseña:</label>
+            <input type="password" name="password" id="password">
+        </fieldset>
+        <!-- Radio -->
+        <fieldset>
+            <legend>Radio</legend>
+            <input type="radio" name="radio" id="radio1" value="1">
+            <label for="radio1">Valor 1</label><br>
+            <input type="radio" name="radio" id="radio2" value="2">
+            <label for="radio2">Valor 2</label><br>
+            <input type="radio" name="radio" id="radio3" value="3">
+            <label for="radio3">Valor 3</label>
+        </fieldset>
+        <!-- Range -->
+        <fieldset>
+            <legend>Range</legend>
+            <label for="range">Rango:</label>
+            <input type="range" name="range" id="range">
+        </fieldset>
+        <!-- Search -->
+        <fieldset>
+            <legend>Search</legend>
+            <label for="search">Buscar:</label>
+            <input type="search" name="search" id="search">
+        </fieldset>
+        <!-- Select -->
+        <fieldset>
+            <legend>Select</legend>
+            <label for="select">Seleccionar:</label>
+            <select name="select" id="select">
+                <option value="option1">Opcion 1</option>
+                <option value="option2">Opcion 2</option>
+                <option value="option3">Opcion 3</option>
+            </select>
+        </fieldset>
+        <!-- Tel -->
+        <fieldset>
+            <legend>Tel</legend>
+            <label for="tel">Teléfono:</label>
+            <input type="tel" name="tel" id="tel" pattern="[0-9]{9}" placeholder="987654321" size="9">
+        </fieldset>
+        <!-- Text -->
+        <fieldset>
+            <legend>Text</legend>
+            <label for="text">Texto:</label>
+            <input type="text" name="text" id="text"><br>
+            <label for="textdisabled">Texto deshabilitado:</label>
+            <input type="text" name="textdisabled" id="textdisabled" disabled><br>
+            <label for="textdisabled">Texto solo-lectura:</label>
+            <input type="text" name="textreadonly" id="textreadonly" readonly><br>
+        </fieldset>
+        <!-- Textarea -->
+        <fieldset>
+            <legend>Textarea</legend>
+            <label for="textarea">Area de texto:</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        </fieldset>
+        <!-- Time -->
+        <fieldset>
+            <legend>Time</legend>
+            <label for="time">Hora:</label>
+            <input type="time" name="time" id="time">
+        </fieldset>
+        <!-- URL -->
+        <fieldset>
+            <legend>URL</legend>
+            <label for="url">Dirección:</label>
+            <input type="url" name="url" id="url">
+        </fieldset>
+        <!-- Week -->
+        <fieldset>
+            <legend>Week</legend>
+            <label for="week">Semana:</label>
+            <input type="week" name="week" id="week">
+        </fieldset>
+        <!-- Reset -->
+        <fieldset>
+            <legend>Reset</legend>
+            <input type="reset" value="Reset">
+        </fieldset>
+        <!-- Submit -->
+        <fieldset>
+            <legend>Submit</legend>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>

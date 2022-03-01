@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla - Página 149</title>
+    <style>
+        table {
+            border-collapse: collapse;   /* border-collapse: borde sin separacion */
+        }
+        thead {
+            background-color: black;   /* background-color: fondo negro */
+            color: white;   /* color: blanco */
+        }
+        th, td {
+            border: 1px dashed blue;
+        }
+        /* td: celdilla
+            td:nth-child(): indica la columna
+        */
+        td:nth-child(3), td:nth-child(4) {
+            text-align: right;   /* text-align: alinea a la derecha */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- colgroup: grupo de columnas -->
+        <colgroup>
+            <!-- col: columnas -->
+            <col span="3">
+            <!-- col: columna
+                style: fondo de color cyan
+            -->
+            <col span="1" style="background-color:cyan;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Modelo</th>
+                <th>Rendimiento (%)</th>
+                <th>Precio (€)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Modelo A</td>
+                <td>AA123</td>
+                <td>50</td>
+                <!-- rowspan: filas combinadas -->
+                <td rowspan="2">600</td>
+            </tr>
+            <tr>
+                <td>Modelo B</td>
+                <td>BB345</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>Modelo C</td>
+                <td>CC678</td>
+                <td>90</td>
+                <td>800</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <!-- colspan: columnas combinadas -->
+                <td colspan="2"></td>
+                <td>2000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

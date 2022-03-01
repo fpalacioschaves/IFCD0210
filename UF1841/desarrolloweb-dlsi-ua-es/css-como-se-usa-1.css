@@ -1,0 +1,27 @@
+body {
+    color: #00f;
+    background-color: #cfc;
+    font-family: Georgia, Cambria, serif;
+    font-size: 16px;
+}
+h1, h2 {
+    font-family: Verdana, Calibri, sans-serif;
+}
+h1 {
+    color: #f00;
+    font-size: 32px;
+}
+h2 {
+    color: #a00;
+    font-size: 24px;
+}
+.campo {
+    color: #060;
+}
+strong {
+    font-size: 20px;
+}
+em {
+    color: #fff;
+    background-color: #000;
+}

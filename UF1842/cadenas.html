@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones con cadenas</title>
+</head>
+
+<body>
+    <p id="salida"></p>
+    <script>
+        const lorem = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia recusandae reprehenderit harum incidunt voluptatem aperiam consequatur impedit earum, debitis iure quidem nesciunt modi quasi nostrum sunt blanditiis? Sit, possimus placeat?";
+
+        const sal = document.getElementById("salida");
+
+        sal.innerHTML = lorem;
+        sal.innerHTML += "<hr>";
+
+        lon = lorem.length;
+        sal.innerHTML += "Longitud del texto: " + lon;
+        sal.innerHTML += "<br>";
+
+        mitad = lorem.charAt(lon / 2);
+        sal.innerHTML += "Caracter en el punto medio: " + mitad;
+        sal.innerHTML += "<br>";
+
+        primero = lorem[0];
+        ultimo = lorem[lon - 1];
+        sal.innerHTML += "Primer elemento: " + primero + " y ultimo elemento: " + ultimo;
+        sal.innerHTML += "<br>";
+
+        // calcular numero de frases
+        // busca los elementos .?! dentro de lorem y los guarda en un array
+        finfrase = lorem.match(/[.?!]/g);
+        // sal.innerHTML += "Numero de frases: " + finfrase.length;
+        sal.innerHTML += "Numero de frases: " + numFrases();
+        sal.innerHTML += "<br>";
+
+        // calcular numero de palabras
+        espacios = lorem.match(/ /g);
+        sal.innerHTML += "Numero de palabras: " + (espacios.length + 1);
+        sal.innerHTML += "<br>";
+
+        // cambio vocales por i
+        lirim = lorem.replace(/[aeou]/g, "i");
+        // tambien las mayusculas
+        lirim = lirim.replace(/[AEOU]/g, "I");
+        // lirim = lorem.replace(/[aeou]/g, "i").replace(/[AEOU]/g, "I");
+        sal.innerHTML += lirim;
+        sal.innerHTML += "<br>";
+
+        // Definicion de funciones
+        function numFrases() {
+            nF = 0;
+            nF += comprobar(".");
+            nF += comprobar("?");
+            nF += comprobar("!");
+            return nF;
+        }
+
+        function comprobar(s) {
+            n = 0;
+            p = lorem.indexOf(s);
+            while (p < lon && p != -1) {
+                n++;
+                p = lorem.indexOf(s, p + 1);
+            }
+            return n;
+        }
+    </script>
+</body>
+
+</html>

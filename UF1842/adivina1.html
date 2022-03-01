@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el numero</title>
+    <style>
+        #error {
+            background-color: red;
+            color: white;
+        }
+        #acierto {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <span id="error"></span>
+    <span id="acierto"></span>
+    <script>
+        n = Math.floor(Math.random()*5+1);   // numero a adivinar
+        console.log(n);
+        p = prompt("Adivina un numero entre 1 y 5");
+        er = document.getElementById("error");
+        ok = document.getElementById("acierto");
+        
+        if (p >= 1 && p <= 5) {   // compruebo si p esta entre 1 y 5
+            document.write("Es un numero valido");
+            if (p > n) {
+                er.innerHTML = "Es mas bajo<br>";
+            } else if (p < n) {
+                er.innerHTML = "Es mas alto<br>";
+            } else {
+                ok.innerHTML = "Has acertado";
+                ok.innerHTML += "<br>";
+            }
+        } else {
+            er.innerHTML="No es un numero entre 1 y 5";
+        }
+        // alert("Fin\ndel\nprograma");
+    </script>
+</body>
+
+</html>

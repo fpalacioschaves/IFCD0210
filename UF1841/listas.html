@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <!-- emmet / ul>li*4 -->
+    <!-- ul: lista desordenada
+        type: viñetas cuadradas
+    -->
+    <ul type="square">
+        <li>Arroz</li>
+        <li>Café
+            <ol>
+                <li>Mezcla</li>
+                <li>Descafeinado</li>
+            </ol>
+        </li>
+        <li>Leche</li>
+        <li>Pizza</li>
+    </ul>
+    <!-- ol: lista ordenada
+        start: inicio de la lista
+        type: numeros romanos minusculas
+        reversed: orden de mayor a menor
+    -->
+    <ol start="5" type="i" reversed>
+        <li>Arroz</li>
+        <li>Café</li>
+        <li>Té
+            <!-- ol: lista ordenada
+                type: numero arabigo
+            -->
+            <ol type="1">
+                <li>Limón</li>
+                <li>Menta</li>
+            </ol>
+        </li>
+        <li>Leche</li>
+        <li>Pizza</li>
+    </ol>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Array</title>
+</head>
+<body>
+    <p id="salida"></p>
+    <script>
+        const sal = document.getElementById("salida");
+        sal.innerHTML = "";
+        const arr = new Array();
+
+        // mostrar el array
+        for (i=0; i<5; i++) {
+            arr[i] = Math.floor(Math.random()*100)+1;
+        }
+        sal.innerHTML += "<strong>El array es: </strong>"+arr+"<br>";
+
+        // calcular la suma de los elementos del array
+        suma = 0;
+        for (i=0; i<5; i++) {
+            suma += arr[i];
+        }
+        /* for (num of arr) {
+            suma += num;
+        } */
+        sal.innerHTML += "<strong>La suma es: </strong>"+suma+"<br>";
+
+        // calcular la media aritmetica de los elementos del array
+        sal.innerHTML += "<strong>La media aritmetica es: </strong>"+suma/5+"<br>";
+
+        // calcular el mayor y el menor de los elementos del array
+        // descomenta la linea 37 para usar cualquiera de las linea 40 o 46
+        // arr.sort(function(a,b){return a-b});  // reordena el propio array
+        
+        menor = calcMenor(arr);
+        // menor = arr[0];
+        // menor = Math.min(arr[0],arr[1],arr[2],arr[3],arr[4]);
+        // menor = Math.min(...arr);
+        sal.innerHTML += "<strong>El menor es: </strong>"+menor+"<br>";
+
+        mayor = calcMayor(arr);
+        // mayor = arr[4];
+        // mayor = Math.max(arr[0],arr[1],arr[2],arr[3],arr[4]);
+        // mayor = Math.max(...arr);
+        sal.innerHTML += "<strong>El mayor es: </strong>"+mayor+"<br>";
+
+        // Funcion que calcula el numero menor de un array
+        function calcMenor(a) {
+            men = a[0];   // considero que el menor es el primer elemento
+            for (i=1; i<5; i++) {   // recorro el array
+                if (a[i] < men) {   // si el elemento actual es mas pequeño que el menor
+                    men = a[i];   // me quedo con el nuevo menor
+                }
+            }
+            return men;
+        }
+
+        // Funcion que calcula el numero mayor de un array
+        function calcMayor(a) {
+            may = a[0];   // considero que el mayor es el primer elemento
+            for (n of a) {
+                may = (n > may) ? n : may;   // si el elemento actual es mas grande que el mayor, me quedo con el nuevo mayor
+            }
+            return may;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro - Mi Web</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <form action="http://euroformac.totalh.net/php/form.php">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" maxlength="50"><br><br>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos" id="apellidos" maxlength="50"><br><br>
+        Sexo: <input type="radio" name="sexo" id="hombre" value="H" checked>
+        <label for="hombre">hombre</label>
+        <input type="radio" name="sexo" id="mujer" value="M">mujer<br><br>
+        <label for="correo">Correo:</label>
+        <input type="email" name="correo" id="correo"><br><br>
+        <label for="poblacion">Población:</label>
+        <select name="poblacion" id="poblacion">
+            <option value="Alicante">Alicante</option>
+            <option value="Sevilla">Sevilla</option>
+            <option value="Madrid">Madrid</option>
+            <option value="Valencia">Valencia</option>
+        </select><br><br>
+        <label for="descripcion">Descripción:</label>
+        <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea><br><br>
+        <input type="checkbox" name="deseo" id="deseo" checked>
+        <label for="deseo">Deseo recibir información sobre novedades y ofertas</label><br><br>
+        <input type="checkbox" name="declaro" id="declaro" value="off">
+        <label for="declaro">Declaro haber leido y aceptar las condiciones generales del programa y la normativa de protección de datos</label><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

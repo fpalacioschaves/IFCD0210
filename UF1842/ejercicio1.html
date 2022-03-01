@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Pulsa un boton</title>
+</head>
+<body>
+    <input type="button" value="A" onclick="boton('A')">
+    <input type="button" value="B" onclick="boton('B')">
+    <input type="button" value="C" onclick="alert('Has pulsado el boton C');">
+    <script>
+        function boton(p) {
+            alert("Has pulsado el boton "+p);
+        }
+        function botonA() {
+            alert("Has pulsado el boton A");
+        }
+        function botonB() {
+            alert("Has pulsado el boton B");
+        }
+        /* function botonC() {
+            alert("Has pulsado el boton C");
+        } */
+    </script>
+</body>
+</html>

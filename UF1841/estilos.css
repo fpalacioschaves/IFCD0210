@@ -1,0 +1,51 @@
+/* p: parrafo
+    background-color: color de fondo
+*/
+p {
+    background-color: yellow;
+}
+
+/* .fondo-cian: clase */
+.fondo-cian {
+    background-color:cyan;
+}
+
+/* h1: encabezado 1
+    p: parrafo
+    font-family: tipografia
+*/
+h1, p {
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* @font-face: definicion de la tipografia
+    font-family: tipografia
+    src: origen de la tipografia
+*/
+@font-face {
+    font-family: elquetuquieras;
+    src: url(fonts/oceanicdrift.ttf);
+}
+
+/* p.ocean: parrafo de la clase ocean
+*/
+p.ocean {
+    font-family: elquetuquieras;
+}
+
+/* #abajo: identificador abajo
+    color: color del texto
+*/
+#abajo {
+    color: white;
+}
+body {
+    background-color: purple;
+}
+
+/* p.ocean span: span dentro de parrafo con la clase ocean
+    font-size: tamaño de la tipografia
+*/
+p.ocean span {
+    font-size: xx-large;
+}
