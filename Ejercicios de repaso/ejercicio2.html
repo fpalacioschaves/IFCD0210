@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="contenedor">
+        <form id="miformulario">
+
+            <label for "usuario">Usuario</label>
+            <input type="text" id="usuario">
+
+            <label for "password">Password</label>
+            <input type="text" id="password">
+
+            <input type="button" id="enviar" value="Enviar" onclick="checkear();">
+        </form>
+    </div>
+    <script>
+
+        var numero_intentos = 0;
+
+        function checkear(){
+
+            var usuario = document.getElementById("usuario").value;
+
+            var password = document.getElementById("password").value;
+
+            if( numero_intentos < 2){
+
+                // Acierto
+                if( usuario == "admin" && password == "supermaster"){
+
+                    document.getElementById("contenedor").innerHTML = "<h2>Bienvenido, admin</h2>"
+
+                }
+
+                else{
+                    numero_intentos++;
+                }
+
+            }
+            else{
+            // Fin de oportunidades
+            document.getElementById("contenedor").innerHTML = "<h2>Contacte con su administrador</h2>";
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>

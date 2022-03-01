@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    p{
+       font-size: 12px; 
+    }
+</style>
+<body>
+
+    <p id="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi arcu mi, sollicitudin vitae dictum quis, rutrum ac erat. Nam dapibus in orci bibendum condimentum. Morbi dignissim nisi sit amet vulputate condimentum. Vestibulum et dolor eu massa pulvinar consectetur at non nisl. Morbi odio lorem, accumsan eu dictum aliquet, faucibus quis metus. Mauris vitae dapibus massa, non commodo erat. Aenean consequat, purus et luctus sollicitudin, nisl nunc accumsan eros, eu sagittis ipsum ipsum ut justo. Donec mollis lorem sit amet ipsum interdum interdum.
+    </p>
+
+    <button id="mas_grande" onclick="aumentar();">Aumentar</button>
+
+    <button id="mas_pequeño" onclick="disminuir();">Disminuir</button>
+
+    <script>
+
+        function aumentar(){
+            document.getElementById("parrafo").style.fontSize = "24px";
+
+        }
+
+        function disminuir(){
+            document.getElementById("parrafo").style.fontSize = "12px";
+        }
+
+    </script>
+
+</body>
+</html>
