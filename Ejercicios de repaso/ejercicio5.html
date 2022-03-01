@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="taquilla">
+        <label for=""dia">Día de la semana</label>
+        <input type="text" id="dia">
+
+        <label for="edad">Edad</label>
+        <input type="text" id="edad">
+
+        <input type="button" value="Calcular precio" onclick="calcular_precio();">
+        </form>
+
+        <div id="precio"></div>
+
+
+
+    </form>
+
+    <script>
+
+        function calcular_precio(){
+
+            var precio = 0;
+
+            var edad = document.getElementById("edad").value;
+            var dia = document.getElementById("dia").value;
+
+            switch (dia){
+                case "lunes":
+                    if( edad < 35 ){
+                        precio = 2;
+                    }
+                    else{
+                        precio = 5;
+                    }
+                    break;
+                case "martes":
+                    if( edad < 25 ){
+                        precio = 2;
+                    }
+                    if( edad >=25 && edad < 50){
+                        precio = 5;
+                    }
+                    if( edad >= 50){
+                        precio = 7;
+                    }
+                    break;
+                case "miércoles":
+                    if( edad < 18){
+                        precio = 3;
+                    }
+                    if( edad >= 18 && edad < 50){
+                        precio = 5;
+                    }
+                    if( edad >= 50){
+                        precio = 8;
+                    }
+                    break;
+                case "jueves":
+                    if( edad < 18){
+                        precio = 5;
+                    }
+                    else{
+                        precio = 7;
+                    }
+                    break;
+                default:
+                    precio = 10;
+            
+            
+                }
+
+                document.getElementById("precio").innerHTML = "El precio de la entrada es " + precio;
+
+        }
+    </script>
+</body>
+</html>
