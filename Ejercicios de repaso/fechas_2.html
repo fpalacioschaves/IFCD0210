@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form id="fecha">
+        <label for "fecha_nacimiento">Fecha de nacimiento</label>
+        <input type="date" id="fecha_nacimiento">
+
+        <input type="button" value="Calcular" onclick="calcular_edad();">
+    </form>
+
+    <div id="resultado"></div>
+    
+
+    <script>
+
+        function calcular_edad(){
+            fecha = document.getElementById("fecha_nacimiento").value;
+            console.log(fecha)
+            fecha_array = fecha.split("-");
+
+            fecha_nacimiento = new Date(fecha_array[0],fecha_array[1],fecha_array[2] );
+
+            fecha_nacimiento_number = fecha_nacimiento.getTime();
+
+            ahora = new Date();
+
+            ahora_number = ahora.getTime();
+
+            diferencia = ahora_number - fecha_nacimiento_number;
+
+            segundos = diferencia / 1000;
+
+            minutos = segundos /60;
+
+            horas = minutos / 60;
+
+            dias = horas /24;
+
+            annos = dias / 365;
+
+            console.log(annos)
+
+
+            resto = annos - Math.floor(annos);
+
+            dias = Math.floor(resto * 365);
+
+            document.getElementById("resultado").innerHTML = "Tu edad son " + Math.floor(annos) + "años y " + dias + " dias";
+        }
+
+    </script>
+</body>
+</html>

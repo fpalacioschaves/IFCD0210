@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function calcular_mediana(lista){
+
+            var lista_ordenada = lista.sort( function (a,b) { return (a- b) });
+
+            var num_elementos = lista.length;
+
+            var paridad = num_elementos % 2;
+
+            var indice_centro;
+
+            var valor_mediano;
+
+            if( paridad == 1){
+
+                indice_centro = Math.floor(num_elementos / 2); 
+
+                valor_mediano = lista_ordenada[indice_centro];
+
+            }
+
+            if( paridad == 0){
+
+                indice_centro = Math.floor(num_elementos / 2) - 1;
+
+                valor_mediano = ( lista_ordenada[indice_centro] + lista_ordenada[indice_centro + 1] ) / 2;
+
+
+            }
+
+            return valor_mediano;
+
+
+        }
+
+        mi_array = [6,3,2,1,4,5];
+
+        alert(calcular_mediana(mi_array))
+
+
+    </script>
+    
+</body>
+</html>
