@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        class Animales {
+            constructor(nombre_del_animal, edad_del_animal) {
+                this.nombre = nombre_del_animal;
+                this.edad = edad_del_animal;
+            }
+    
+        canta() {
+            return `${this.nombre} puede cantar`;
+        }
+    
+        baila() {
+            return `${this.nombre} puede bailar`;
+        }
+
+        setNombre(nombre){
+            this.nombre = nombre;
+        }
+
+        getNombre(){
+            return this.nombre;
+        }
+}
+
+let rintintin = new Animales("Rintintin", 34);
+
+let piolin = new Animales("Piolin", 4);
+console.log(piolin)
+
+piolin.setNombre("paquito")
+
+alert(piolin.edad)
+
+
+console.log(piolin)
+
+class Gatos extends Animales {
+    constructor(nombre, edad, colorBigotes) {
+        super(nombre, edad);
+        this.colorBigotes = colorBigotes;
+    }
+    
+    bigotes() {
+        return `Tengo bigotes color ${this.colorBigotes}`;
+    }
+}
+
+    let clara = new Gatos("Clara", 33, "índigo");
+    console.log(clara.bigotes());
+    
+    </script>
+    
+</body>
+</html>
