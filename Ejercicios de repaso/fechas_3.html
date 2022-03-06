@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form id="form_fecha">
+        <label for "fecha">Fecha</label>
+        <input type="text" id="fecha">
+        <input type="button" value="Enviar" onclick="extraer();">
+    </form>
+
+    <div id="contenedor"></div>
+    
+    <script>
+
+        function extraer(){
+            fecha = document.getElementById("fecha").value;
+            fecha_array = fecha.split("/");
+            dia = fecha_array[0];
+            mes = fecha_array[1];
+            anno = fecha_array[2];
+
+            dias_semana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+            meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+            
+            
+            fecha_objeto = new Date(anno, mes-1, dia);
+
+            numero_dia = fecha_objeto.getDay();
+
+
+            nombre_dia = dias_semana[numero_dia];
+
+            nombre_mes = meses[parseInt(mes)-1];
+            
+            document.getElementById("contenedor").innerHTML = 
+            "Dia: " + dia + ", " + nombre_dia + 
+            "<br>Mes: " + mes + ", " + nombre_mes + 
+            "<br>Año: " + anno;
+
+        }
+
+    </script>
+</body>
+</html>

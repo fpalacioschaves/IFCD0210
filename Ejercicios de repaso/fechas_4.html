@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <input type="date" id="fecha_1">
+        <input type="date" id="fecha_2">
+        <input type="button" value="Comparar" onclick="comparar();">
+    </form>
+
+    <script>
+
+        function comparar(){
+            fecha_1 = document.getElementById("fecha_1").value;
+            fecha_2 = document.getElementById("fecha_2").value;
+
+            console.log(fecha_1)
+
+            fecha_1_object = new Date(fecha_1)
+            fecha_2_object = new Date(fecha_2)
+            
+            fecha_1_number = fecha_1_object.getTime();
+            fecha_2_number = fecha_2_object.getTime();
+
+            
+            if(fecha_1_number > fecha_2_number){
+                alert("La fecha más reciente es " + fecha_1) 
+            }
+            else{
+                alert("La fecha más reciente es " + fecha_2)
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

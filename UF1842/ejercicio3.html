@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Plurales</title>
+</head>
+
+<body>
+    <script>
+        palabra = prompt("Introduce una palabra");
+
+        palabra = palabra.toLowerCase();   // convierte palabra a minusculas
+        // calcular ultima letra de palabra
+        longitud = palabra.length;
+        final = longitud - 1;
+        ultima = palabra.substr(final, 1);
+        // ultima = palabra.substr(-1);
+        // ultima = palabra.charAt(final);
+
+        // comprobar si es una vocal o no 
+        switch (ultima) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u': palabra += 's'; break;
+            default: palabra += 'es';
+        }
+        alert("Palabra en plural: " + palabra);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+</head>
+<body>
+    <!-- form: formulario
+        method: metodo de envio del formulario (puede ser "get" o "post")
+    -->
+    <form action="" method="post">
+        <!-- input type="radio": campo selector de tipo radio (permite seleccionar solo 1 opcion)
+            name: nombre del campo (es el mismo en todos los campos)
+            id: identificador unico de campo
+            value: valor del campo
+            required: campo obligatorio
+            label suele ir detras de input
+        -->
+        <input type="radio" name="opcion" id="opcion1" value="A" required>
+        <label for="opcion1">Opcion 1</label><br>
+        <input type="radio" name="opcion" id="opcion2" value="B">
+        <label for="opcion2">Opcion 2</label><br>
+        <input type="radio" name="opcion" id="opcion3" value="C">
+        <label for="opcion3">Opcion 3</label><br>
+        <hr>
+
+        <!-- input type="checkbox": campo selector de tipo checkbox (permite seleccionar 0, 1 o mas opciones)
+            name: nombre del campo (distinto en cada campo)
+            id: identificador unico de campo
+            checked: opcion marcada inicialmente
+            required: campo obligatorio
+            label suele ir de tras de input
+        -->
+        <input type="checkbox" name="box1" id="opc1" value="A" required>
+        <label for="opc1">Opcion 1</label><br>
+        <input type="checkbox" name="box2" id="opc2" value="B" checked>
+        <label for="opc2">Opcion 2</label><br>
+        <hr>
+
+        <label for="opcionsel">Elige una opcion</label><br>
+        <!-- select: campo selector desplegable (permite seleccionar 1 o mas opciones)
+            name: nombre del campo
+        -->
+        <select name="eleccion" id="opcionsel">
+            <!-- option: opcion
+                disabled: opcion desactivada
+                selected: opcion seleccionada
+                value: valor del campo
+            -->
+            <option value="" disabled selected>-- elige una opcion --</option>
+            <option value="1">Uno</option>
+            <option value="2">Dos</option>
+            <option value="3">Tres</option>
+        </select><br>
+        <hr>
+
+        <label for="peso">Peso</label><br>
+        <!-- input type="range": campo de rango
+            min: minimo
+            max: maximo
+            value: valor inicial
+            step: paso entre numeros
+        -->
+        55<input type="range" name="peso" id="peso" min="55" max="85" value="60" step="5">85<br>
+
+        <!-- input type="hidden": campo oculto -->
+        <input type="hidden" name="confirmacion" value="si">
+        <input type="submit" value="Go">
+    </form>
+</body>
+</html>

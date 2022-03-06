@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<script>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenido"></div>
+    <script>
+        
+        dias_semana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+        
+        /*for (contador = 0; contador <= 6; contador ++){
+            document.getElementById("contenido").innerHTML += dias_semana[contador] + "<br>";
+        }*/
+
+        let mi_array = new Array();
+
+        for ( contador = 0 ; contador <=10 ; contador++){
+            //mi_array[contador] = contador; 
+            mi_array.push(contador);
+        }
+        
+
+        // encontrar el elemento a borrar
+        // eliminar el número 8 del array
+
+        posicion = mi_array.indexOf(8);
+        //borrarlo
+        mi_array.splice(posicion,1);
+         mi_array.sort(function(a,b) { return a-b });
+
+         console.log(mi_array);
+
+
+
+    </script>
+
+</body>
+</html>

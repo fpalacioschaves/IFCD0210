@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <input type="date" id="fecha_1">
+        <input type="button" value="Convertir" onclick="convertir();">
+    </form>
+
+    <script>
+
+        function convertir(){
+            fecha_1 = document.getElementById("fecha_1").value;
+            
+            console.log(fecha_1);
+            fecha_1_array = fecha_1.split("-")
+
+            fecha_convertida_array = fecha_1_array.reverse();
+
+            fecha_convertida = fecha_convertida_array.join("/")
+
+            fecha_convertida_2 = fecha_1.split("-").reverse().join("/");
+
+            //fecha_convertida = fecha_1_array[2] + "/" + fecha_1_array[1] + "/" + fecha_1_array[0];
+
+            console.log(fecha_convertida_2)
+        
+        }
+
+    </script>
+    
+</body>
+</html>

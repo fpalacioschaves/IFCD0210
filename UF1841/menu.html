@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        ul {
+            padding: 0;
+            margin-top: 0;
+            width: 50%;
+        }
+        li {
+            list-style-type: none;
+            border: 1px solid green;
+            padding: 10px;
+        }
+        li a {
+            text-decoration: none;
+        }
+        /* :hover: cambia cuando pasa el raton sobre el elemento */
+        li:hover, div a:hover, nav a:hover {
+            background-color: black;
+        }
+        li:hover a, div a:hover, nav a:hover {
+            color:white;
+        }
+        div.menu a, nav a {
+            text-decoration: none;
+            display:block;
+            padding: 10px;
+            border: 1px solid green;
+        }
+        div.menu, nav {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu realizado con lista desordenada de enlaces -->
+    <ul>
+        <li><a href="https://www.opel.com">Opel</a></li>
+        <li><a href="https://www.seat.com">Seat</a></li>
+        <li><a href="https://www.ford.com">Ford</a></li>
+        <li><a href="https://www.fiat.com">Fiat</a></li>
+    </ul>
+    <hr>
+    <!-- Menu realizado con div de enlaces -->
+    <div class="menu">
+        <a href="https://www.opel.com">Opel</a>
+        <a href="https://www.seat.com">Seat</a>
+        <a href="https://www.ford.com">Ford</a>
+        <a href="https://www.fiat.com">Fiat</a>
+    </div>
+    <hr>
+    <!-- Menu realizado con nav de enlaces -->
+    <nav>
+        <a href="https://www.opel.com">Opel</a>
+        <a href="https://www.seat.com">Seat</a>
+        <a href="https://www.ford.com">Ford</a>
+        <a href="https://www.fiat.com">Fiat</a>
+    </nav>
+</body>
+</html>

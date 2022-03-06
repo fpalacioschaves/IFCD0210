@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salidas</title>
+
+</head>
+<body>
+    <h1 id="salida"></h1>
+    <script>
+        x = 5;   // x es un numero
+        y = "cadena";   // y es una cadena
+        alert(x + y);   // muestra "5cadena" en un cuadro de alerta
+        console.log(x + y);   // muestra "5cadena" en la consola
+        z = "<h2>";
+        z += x + y;
+        z += "</h2>";
+        console.log(z);
+        document.write(z);
+        document.getElementById("salida").innerHTML = x + y;
+    </script> 
+</body>
+</html>

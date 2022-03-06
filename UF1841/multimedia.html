@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+<body>
+    <!-- video: reproduce un video
+        src: origen del video
+        controls: controles para la reproduccion
+        width: ancho del video
+        height: alto del video
+        poster: imagen inicial del video
+    -->
+    <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls width="560" height="315" poster="big-buck-bunny.png"></video>
+
+    <!-- video: reproduce un video
+        src: origen del video
+        controls: controles para la reproduccion
+        autoplay muted: reproduce el video automaticamente sin audio (solo funciona autoplay con muted)
+    -->
+    <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls autoplay muted></video>
+
+    <!-- iframe: permite reproducir un video YouTube dentro de una pagina (insertado directamente desde YouTube)
+        width: ancho del video
+        height: alto del video
+        src: direccion de YouTube
+        title: titulo del video
+    -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YE7VzlLtp-4" title="Big Buck Bunny" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+    <!-- audio: reproduce un audio
+        src: origen del audio
+        controls: controles para la reproduccion (si no existen no se puede reproducir)
+    -->
+    <audio src="Wildlife.ogg" controls title="Wildlife" autoplay muted></audio>
+
+    <!-- audio: reproduce un audio
+        controls: controles para la reproduccion (si no existen no se puede reproducir)
+    -->
+    <audio controls>
+        <!-- source: origen del audio (si el navegador no puede reproducir un formato reproduce el siguiente que se indique)
+            src: nombre del origen
+            type: tipo de audio
+        -->
+        <source src="Wildlife.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

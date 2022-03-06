@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formulario" action="" method="POST">
+
+        <label for "nota">Marca</label>
+        <input type="text" id="marca" placeholder="Introduce la marca">
+        <input type="button" value="Enviar"  onclick="checkear_descuento();">
+    </form>
+
+    <div id="mensaje"></div>
+</body>
+
+<script>
+    function checkear_descuento(){
+
+        let marca = document.getElementById("marca").value;
+
+        switch (marca) {
+            case "Ford":
+                document.getElementById("mensaje").innerHTML = "Tiene un descuento del 10%";
+                break;
+            
+            case "Renault":
+                document.getElementById("mensaje").innerHTML = "Tiene un descuento del 5%";
+                break;
+            
+            default:
+                document.getElementById("mensaje").innerHTML = "No tiene descuento";
+                break;
+                }
+
+
+
+    }
+
+</script>
+</html>
