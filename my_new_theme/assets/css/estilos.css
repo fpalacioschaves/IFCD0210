@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #545454;
+}
+
+a:link, a:visited {
+    color: #4285f4;
+}
+
+p {
+    line-height: 1.7em;
+}
+
+div.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+article.post {
+    border-bottom: 4px dashed #ecf0f1;
+}
+
+article.post:last-of-type {
+    border-bottom: none;
+}
+
+.site-header {
+    border-bottom: 3px solid #ecf0f1;
+    height: 100px;
+}
+
+.site-footer {
+    border-top: 3px solid #ecf0f1;
+}
+
+#menu-menu-principal{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 10px;
+}
+.current-menu-item{
+    font-weight: bold;
+}
