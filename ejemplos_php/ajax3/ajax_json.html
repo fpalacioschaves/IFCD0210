@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    
+    
+    <script>
+    
+       //getdeails será nuestra función para enviar la solicitud ajax
+       var getdetails = function( id ){
+          // Definimos la URL que vamos a solicitar via Ajax
+          var ajax_url = "personas.php";
+
+          // Definimos los parámetros que vamos a enviar
+          // Debería trabajar en hacer esto un poco más limpio, de momento vale para hacer funcionar el ejemplo
+          var params = '';
+          
+          id = JSON.parse(id).toString();
+
+          id = id.split(",");
+          
+          if( id.length > 1 ) {
+              //Si hay más de un id, enviar como query string array
+              for( elem in id ) {
+              	params += "id[]=" + id[elem] +"&";
+              }
+          } else {
+              params = "id=" + id;
+          }
+          
+          //Añadimos los parámetros a la URL
+          ajax_url += '?' + params;
+
+          // Creamos un nuevo objeto encargado de la comunicación
+          var ajax_request = new XMLHttpRequest();
+
+          // Definimos una función a ejecutar cuándo la solicitud Ajax tiene alguna información
+          ajax_request.onreadystatechange = function() {
+
+              // see readyState es 4, proseguir
+              if (ajax_request.readyState == 4 ) {
+
+                  // Analizaos el responseText que contendrá el JSON enviado desde el servidor
+                  var response = JSON.parse( ajax_request.responseText );
+                
+                   if( response.success ) {
+					      
+                       var output = "<h1>" + response.data.message + "</h1>";
+                       //recorremos cada usuario
+                       for ( user in response.data.users ) {
+
+                           output += "<h2>Detalles del usuario " + response.data.users[user].ID + "</h2>";
+                           
+                           //recorremos los valores de cada usuario
+                           for ( userdata in response.data.users[user] ) {
+                           
+                               output += '<ul>';
+                               output += '<li>' + userdata + ': ' + response.data.users[user][userdata] + "</li>";
+                               output += '</ul>';
+                               
+                           }
+                           
+                       }
+                       
+                       //Actualizamos el HTML del elemento con id="#response-container"
+                       document.getElementById("response-container").innerHTML = output;
+
+                   } else {
+                   
+                       //response.success no es true
+                       document.getElementById("response-container").innerHTML = 'No ha habido suerte: ' + response.data.message;
+                       
+                   }
+
+              }
+           }
+           
+           // Definimos como queremos realizar la comunicación
+           ajax_request.open( "GET", ajax_url );
+           
+           //Enviamos la solictud con los parámetros que habíamos definido
+           ajax_request.send();
+
+       };
+       
+       // Esperar a onload para poder acceder a los elementos del DOM
+       window.onload = function() { 
+       
+           // Obtener todos los botones que utilizamos para lanzar la solicitud Ajax
+           var userbutton = document.getElementsByTagName( "button" );
+
+           for (var i=0; i < userbutton.length; i++) {
+              
+               // Para boton seleccionado, cuándo se haga click llamar a la funcion gedetails donde manjamos la solicitud ajax
+               userbutton[i].onclick = function() {
+               
+                   document.getElementById("response-container").innerHTML = "<p>Buscando...</p>";
+                   
+                   // Obtener el valor de data-user, pasar a array si se necesita y ejecutar la funcion getdetails()
+                   var id = this.getAttribute('data-user');
+
+                   getdetails( id );
+                   
+              }
+              
+           }
+     
+
+        };
+       
+    </script>
+</head>
+<body>
+	<p><button class="userdata" data-user="1">Dame los datos de la persona con ID = 1</button> - <button class="userdata" data-user='["1","2","3"]'>Dame los datos de las personas con ID = 1, ID = 2 e ID = 3.</button> - <button class="userdata" data-user="0">Ningún usuario</button></p>
+	<div id="response-container"></div>
+</body>
+</html>

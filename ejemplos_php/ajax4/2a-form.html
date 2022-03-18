@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PHP AJAX Demo</title>
+  </head>
+  <body>
+    <!-- (A) HTML FORM -->
+    <form id="myForm" onsubmit="return ajaxpost()">
+      <input type="text" name="name" required value="Jon Doe"/>
+      <input type="email" name="email" required value="jon@doe.com"/>
+      <input type="submit" value="Go!"/>
+    </form>
+
+    <!-- (B) JAVASCRIPT -->
+    <script>
+    function ajaxpost () {
+      // (B1) GET FORM DATA
+      var form = document.getElementById("myForm");
+      var data = new FormData(form);
+      data.append("KEY", "VALUE"); // ADD MORE DATA IF YOU WANT
+
+      // (B2) AJAX POST
+      fetch("2b-form.php", { method:"POST", body:data })
+      .then(res => res.text())
+
+      // (B3) RESULTS
+      .then((results) => { console.log(results); });
+      return false;
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PHP AJAX Demo</title>
+  </head>
+  <body>
+    <script>
+    // (A) ARRAY DATA
+    var arr = ["FOO", "BAR"];
+    var data = new FormData();
+    data.append("DATA", JSON.stringify(arr));
+
+    // (B) SEND TO SERVER
+    fetch("3b-send-json.php", { method:"POST", body:data })
+    .then(res => res.text())
+    .then((results) => { console.log(results); });
+    </script>
+  </body>
+</html>

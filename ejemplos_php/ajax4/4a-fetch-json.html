@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PHP AJAX Demo</title>
+  </head>
+  <body>
+    <script>
+    // (A) FETCH FROM SERVER
+    fetch("4b-fetch-json.php")
+
+    // (B) PARSE JSON DATA
+    .then(res => res.json())
+    .then((results) => { console.log(results); });
+    </script>
+  </body>
+</html>

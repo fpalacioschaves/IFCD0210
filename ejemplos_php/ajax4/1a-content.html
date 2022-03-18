@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PHP AJAX Demo</title>
+  </head>
+  <body>
+    <!-- (A) HTML -->
+    <div id="wrapper"></div>
+
+    <!-- (B) JAVASCRIPT -->
+    <script>
+    // (B1) AJAX FETCH PHP SCRIPT
+    fetch("1b-content.php")
+
+    // (B2) RETURN SERVER RESPONSE AS TEXT
+    .then(res => res.text())
+
+    // (B3) PUT TEXT INTO WRAPPER
+    .then((txt) => {
+      document.getElementById("wrapper").innerHTML = txt;
+    })
+
+    // (B4) OPTIONAL
+    .catch((err) => { console.error(err); })
+    .finally(() =>{ console.log("FINALLY"); });
+    </script>
+  </body>
+</html>
