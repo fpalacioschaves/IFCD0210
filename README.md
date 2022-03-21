@@ -2,7 +2,5 @@
 
 Ejercicios de prácticas para los alumnos del Certificado de Profesionalidad
 
-
-
-dgsdfgsdfgsdfgsdfg
+Ejercicios Javascript. PHP, Wordpress Theming
 
