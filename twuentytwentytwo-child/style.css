@@ -1,0 +1,15 @@
+/*
+Theme Name: Twenty twenty two child
+Theme URI: http://loquesea.es
+Version: 1.0
+Description: Tema hijo de Twenty Twenty-One
+Author: Fco Palacios 
+Author URI: http://loquesea.es
+Template: twentytwentyone
+Text Domain: twuentytwentytwo-child
+Domain Path: /languages
+*/
+
+h1{
+    color: green;
+}
