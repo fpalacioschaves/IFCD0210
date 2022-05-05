@@ -1,0 +1,183 @@
+.slider {
+    overflow-y: hidden;
+    -webkit-transition: all 1s linear 0s;
+    transition: all 1s linear 0s;
+}
+
+.slider.closed {
+    position: relative;
+    height: 0px;
+
+}
+
+.form-table th.table-header {
+    width: 250px !important;
+    float: left;
+    padding: 25px 10px !important;
+}
+
+.form-table td {
+    width: 600px !important;
+    float: left;
+    /*padding: 25px 10px !important;*/
+}
+
+.wp-admin input[type=text] {
+    width: 100%;
+    /*margin-left: 20px;*/
+}
+
+.wp-admin input[type=number] {
+    width: 100px;
+}
+
+input[type=radio], input[type=checkbox] {
+    width: 16px !important;
+}
+
+.select_category {
+    width: 80% !important;
+}
+
+.dashicons {
+    vertical-align: middle;
+!important;
+}
+
+.table1, .table2, .table3 {
+    cursor: pointer;
+}
+
+.postem-ipsum-generate,
+.postem-ipsum-delete,
+.postem-ipsum-generate-products,
+.postem-ipsum-delete-products,
+.postem-ipsum-generate-users,
+.postem-ipsum-delete-users,
+.postem-ipsum-generate-terms,
+.postem-ipsum-delete-terms,
+.postem-ipsum-export-posts,
+.postem-ipsum-generate-orders,
+.postem-ipsum-delete-orders,
+.postem-ipsum-import-file,
+.postem-ipsum-buddy-generate-groups,
+.postem-ipsum-buddy-delete-groups,
+.postem-ipsum-buddy-generate-activities,
+.postem-ipsum-buddy-delete-activities{
+    margin-top: 20px !important;
+}
+
+/* SLIDER BAR */
+
+.noUi-connect {
+    background: #00a0d2 !important;
+}
+
+.dashicons{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.widefat{
+    margin: 0 !important;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: none;
+}
+.nav-tab-active{
+    background-color: #fff !important;
+    border-bottom: 0px !important;
+}
+
+h1.nav-tab-wrapper, .wrap h2.nav-tab-wrapper, .nav-tab-wrapper{
+    border-bottom: none !important;
+}
+.nav-tab{
+    margin-bottom: -1px !important;
+}
+.table_container{
+    display: none;
+}
+
+
+
+
+
+select, input[type="number"], input[type="text"], input[type="date"] {
+
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     padding: 0px 5px 0px 5px  !important;
+     font-size: 16px !important;
+     border: 1px solid #ccc;
+     height: 35px !important;
+
+     box-shadow: none !important;
+     -webkit-border-radius:4px !important;
+     -moz-border-radius:4px !important;
+     border-radius:4px !important;
+ }
+
+input[type="checkbox"]{
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 16px !important;
+    border: 1px solid #ccc;
+    box-shadow: none !important;
+    -webkit-border-radius:4px !important;
+    -moz-border-radius:4px !important;
+    border-radius:4px !important;
+}
+
+ label, th.table-header{
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0px 5px 0px 5px  !important;
+    font-size: 16px !important;
+
+
+}
+
+
+/* CAUTION: IE hackery ahead */
+
+
+select::-ms-expand {
+    display: none; /* remove default arrow in IE 10 and 11 */
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    select {
+        background:none\9;
+        padding: 5px\9;
+    }
+}
+.dashicons-plus-alt{
+    margin-top: 0px !important;
+}
+
+.hasDatepicker{
+    width: 200px !important;
+}
+
+.postem-ipsum-notice{
+    background: #fff;
+    border-left: 4px solid #46b450;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    margin: 5px 15px 2px 3px;
+    padding: 1px 12px;
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+
+#wpbody-content {
+    padding-bottom: 25px !important;
+}
