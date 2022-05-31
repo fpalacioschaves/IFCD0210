@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        <label for="nombre">Nombre*:</label><input type="text" name="nombre" placeholder="Escribe tu nombre" required/>
+        <br><br>
+        <label for="edad">Edad:</label><input type="number" step="5" min="0" max="100" name="edad" required/>
+        <br><br>
+        <label for="pass">Contraseña:</label><input type="password" name="pass"/>
+        <br/><br>
+        <label for="archivo">Su archivo:</label><input type="file" name="archivo"/>
+        <br><br>
+
+
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked/>
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"/>
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"/>
+        <label for="vehicle3"> I have a boat</label><br>
+        <hr>
+        
+        
+        <input type="radio" id="html" name="fav_language" value="HTML" checked>
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <hr>
+        <p>Seleccione su sexo</p>
+        <select name="sexo">
+            <option value="hombre">Soy un hombre</option>
+            <option value="mujer">Soy una mujer</option>
+            <option value="unicornio" selected>Soy un unicornio</option>
+        </select>
+        <hr>
+        <p>Deje su mensaje:</p>
+        <textarea name="mensaje" rows="10" cols="50"></textarea>
+        <hr>
+        <input type="reset" value="Borrar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

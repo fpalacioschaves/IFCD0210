@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="registro" method="POST" action="form.php">
+        <label for="nombre_usuario">Nombre de usuario</label><br>
+        <input type="text" name="nombre_usuario" required>
+        <br>
+        <label for="pass_usuario">Pass de usuario</label><br>
+        <input type="password" name="pass_usuario" required>
+        <br>
+        <label for="sexo_usuario">Sexo</label><br>
+        <select name="sexo_usuario">
+            <option value="-1">Elija una opción</option>
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+        </select>
+        <br>
+        <label for="edad_usuario">Edad del usuario</label><br>
+        <input type="number" name="edad_usuario">
+        <br>
+        <label for="desc_usuario">Descripción</label><br>
+        <textarea name="desc_usuario"></textarea>
+        <br>
+        <label for="email_usuario">Email del usuario</label><br>
+        <input type="email" name="email_usuario" required>
+        <br>
+        <input type="submit" value="Enviar">
+        <br>
+    </form>
+</body>
+</html>

@@ -1,0 +1,74 @@
+
+h1{
+    font-size: 4em;
+}
+h2{
+    font-size: 3.5em;
+}
+
+.capa1{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 40%;
+    float: right;
+    color: red;
+}
+
+
+
+.cabecera{
+    width: 90%;
+    height: 100px;
+    background-color: yellow;
+    border:1px solid black;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cuerpo{
+    width: 90%;
+    min-height:80vh;
+    background-color: yellow;
+    border:1px solid black;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.pie{
+    width: 90%;
+    height: 150px;
+    background-color: yellow;
+    border:1px solid black;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contenedor{
+    background-color: magenta;
+    width: 79%;
+    float: left;
+    margin-right: 10px;
+}
+
+.aside{
+    background-color:green;
+    width: 20%;
+    float: left;
+}
+
+.cuadrado_rojo{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border: 5px solid black;
+    margin: 50px auto;
+}
