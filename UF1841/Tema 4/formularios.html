@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 18px;
+        }
+        label{
+            display: block;
+            font-style: italic;
+            margin:5px 0;
+        }
+        legend{
+            font-size: 20px;
+            text-align: center;
+            padding: 0 10px;
+        }
+        fieldset{
+            margin: 20px 0;
+            border: 1px dotted #333;
+        }
+        input, select{
+            border: 1px solid #000;
+            font-size: 18px;
+            width: 200px;
+            margin-bottom: 7px;
+            padding: 5px;
+            text-align: center;
+            background-color: #fffad4;
+        }
+        input:focus{
+            background-color: #fff;
+        }
+        #apellido{
+            width: 400px;
+        }
+        #edad{
+            width: 70px;
+        }
+        #boton_enviar{
+            background-color: #267fff;
+            color: #fff;
+            font-size: 18px;
+            padding: 5px;
+            border: 1px solid #000;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form id="formulario1" name="formulario1" method="POST">
+        <fieldset id="grupo_datos">
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+            <br>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" placeholder="Edad" required>
+            <br>
+        </fieldset>
+        <fieldset id="otros_datos">
+            <legend>Otros Datos</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <br>
+            <label for="pass">Contraseña:</label>
+            <input type="password" id="pass" name="pass" placeholder="Contraseña" required>
+            <br>
+            <label for="pass2">Repetir Contraseña:</label>
+            <input type="password" id="pass2" name="pass2" placeholder="Repetir Contraseña" required>
+            <br>
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+            </select>
+            <br>
+            <label for="terminos">Acepto los terminos y condiciones:</label>
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <br>
+            <input type="submit" value="Enviar" id="boton_enviar">
+
+        </fieldset>
+
+    </form>
+</body>
+</html>
