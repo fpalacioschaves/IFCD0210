@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /* 
+        Escribir un script que pida una opción (a, b o c). 
+        Si es a, que diga "Le paso con Administración"
+        Si es b, que diga "Le paso con un comercial"
+        Si es c, que diga "Le paso con Recursos Humanos"
+        Si no es ninguna de las anteriores, que diga "Le paso con una operadora"
+        */
+
+        var opcion = window.prompt("Elija una opción (a, b o c)");
+
+        switch(opcion){
+            case "a":
+                document.write("Le paso con Administración");
+                break;
+            
+            case "b":
+                document.write("Le paso con un comercial");
+                break;
+            
+            case "c":
+                document.write("Le paso con RRHH");
+                break;
+
+            default: 
+                document.write("Le paso con una operadora");
+                break;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
