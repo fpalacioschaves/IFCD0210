@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function detector(){
+            cadena = window.prompt("Introduzca la cadena");
+
+            if(cadena.indexOf("ñ") > -1){
+                alert("La cadena tiene ñ");
+            }
+            else{
+                alert("La cadena no tiene ñ");
+            }
+        }
+
+        function longitud(){
+            cadena = window.prompt("Introduce la cadena")
+
+            document.write("La cadena \"" + cadena + "\" tiene " + cadena.length + " caracteres");
+        }
+        //detector();
+        longitud();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
