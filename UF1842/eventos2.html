@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function dentro(){
+            document.getElementById('contenidos').style.borderColor='black';
+            document.getElementById('contenidos').innerHTML="Recontrahostias";
+        }
+
+        function fuera(){
+            document.getElementById('contenidos').style.borderColor='silver';
+            document.getElementById('contenidos').innerHTML="<h1>Esto es un h1</h1>";
+        }
+
+        function mensaje(){
+            alert("Página cargada")
+        }
+
+    </script>
+    <style>
+        #contenidos{
+            width:450px; 
+            height:60px; 
+            border:thin solid silver;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="mensaje();">
+    <div id="contenidos" onmouseover="dentro();" onmouseout="fuera();">
+        <h1>Esto es un h1</h1>
+    </div>
+</body>
+</html>

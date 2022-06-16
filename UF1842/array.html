@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var mi_array = new Array ();
+
+        mi_array = [4,6,4,3,56];
+
+        //document.write(mi_array[2]);
+
+        var dias_semana = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"];
+
+        //document.write(dias_semana.length);
+
+        for(contador = 0; contador < dias_semana.length; contador++){
+            document.writeln(dias_semana[contador]);
+
+        }
+        document.write("<br>")
+        //dias_semana.push("juernes");
+        dias_semana[3] = "juernes"
+        for(contador = 0; contador < dias_semana.length; contador++){
+            document.writeln(dias_semana[contador]);
+
+        }
+
+        dias_semana.reverse();
+        document.write("<br>")
+        for(contador = 0; contador < dias_semana.length; contador++){
+            document.writeln(dias_semana[contador]);
+
+        }
+
+        dias_semana.sort();
+
+        document.write("<br>")
+        for(contador = 0; contador < dias_semana.length; contador++){
+            document.writeln(dias_semana[contador]);
+
+        }
+        document.write("<br>")
+        document.write(dias_semana.join("<br>"))
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

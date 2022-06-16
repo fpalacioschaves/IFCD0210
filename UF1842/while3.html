@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        Usuario = "user"
+        Password = "1234"
+        Tenemos 3 oportunidades para meter el usuario y el password correcto
+        Si agotamos las 3 oportunidades, que escriba un mensaje de error
+        */
+       contador = 0;
+       user = "user";
+       pass = "1234";
+       do{
+        usuario = window.prompt("Nombre de usuario");
+        password = window.prompt("Contraseña");
+        contador++;
+       }
+       while( (usuario != user || password != pass) && contador < 3)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
