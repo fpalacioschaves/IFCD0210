@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: block;
+        }
+        textarea, textarea:focus{
+            
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>  
+    <form>
+        <div style="width: 50%; margin: 0 auto;">
+    <textarea id="comentario" maxlength="300"></textarea>
+    <span id="help">Le restan 300 caracteres</span>
+</div>
+</form>
+</body>
+
+<script>
+    document.getElementById("comentario").addEventListener("keyup", contar)
+
+    function contar(){
+        caracteres = document.getElementById("comentario").value.length;
+       
+        document.getElementById("help").innerHTML = "Le restan " + (300 - parseInt(caracteres)) + " caracteres"
+    }
+</script>
+</html>
