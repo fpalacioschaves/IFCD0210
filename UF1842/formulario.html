@@ -51,9 +51,12 @@
         <input type="checkbox" name="aficiones" value="dormir">Dormir
         
         <hr>
+        Dinos tu mensaje: 
+        <textarea name="comentarios" id="comentarios"></textarea>
 
+        <input type="button" name="enviar" id="enviar" onclick="mostrar_datos();" value="Enviar">
     </form>    
-    <button name="enviar" id="enviar" onclick="mostrar_datos();">Enviar</button>
+    
 </body>
 
 <script>
@@ -65,8 +68,7 @@
         // Recoger valor de un input. Caso B
         nombre = document.getElementById("nombre"); // Primero recojo el input
         nombre_valor = nombre.value; // Recojo el valor del input
-        //console.log ("nombre: " + nombre_valor)
-
+        
 
 
         //Recoger valor de un select
@@ -74,8 +76,7 @@
         sexo_valor = sexo.value; // el valor seleccionado
         indice_seleccionado = sexo.selectedIndex; // el índice del option seleccionado
         etiqueta_seleccionada = sexo.options[indice_seleccionado].text // la etiqueta del option seleccionado
-        console.log(etiqueta_seleccionada)
-
+        
         //Recoger el valor de un radio 
         colores = document.getElementsByName("colores"); // usamos getElementsByName
         
@@ -84,10 +85,10 @@
 
             if(colores[indice].checked == true){
                 indice_Seleccionado = indice; // Guardo el indice del checkeado
+                color_seleccionado = colores[indice_Seleccionado].value; // valor del radio seleccionado
             }
         }
-        color_seleccionado = colores[indice_Seleccionado].value; // valor del radio seleccionado
-
+       
 
         // Reoger valores de un checkbox
         aficiones = document.getElementsByName("aficiones"); // usamos getElementsByName
@@ -104,8 +105,14 @@
             }
         }
 
-        console.log(indices_aficiones_seleccionadas)
-        console.log(aficiones_seleccionadas)
+
+        //Recogemos el valor de un textarea
+        document.getElementById("comentarios").value = "HOLA METE AQUI TUS COMENTARIOS";
+
+        //document.getElementById("formulario").submit();
+
+        //document.getElementById("formulario").reset();
+        
      
     }
 
