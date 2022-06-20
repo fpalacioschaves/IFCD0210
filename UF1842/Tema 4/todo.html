@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+    <title>ToDo</title>
+    <style>
+        .contenedor{
+            border: 1px solid #ccc;
+            width: 50%;
+            margin: 50px auto;
+            min-height: 100px;
+        }
+
+        h1{
+            text-align: center;
+            font-family: 'Fascinate', cursive;
+        }
+        form{
+            width: 90%;
+            margin: 10px auto;
+        }
+        #nuevo_item{
+            width: 75%;
+            padding: 5px;
+        }
+        #add_item{
+            width: 20%;
+            padding: 5px;
+        }
+
+        #lista{
+            width:90%;
+            margin: 10px auto;
+            font-size: 20px;
+        }
+        li{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>To Do</h1>
+
+        <form onsubmit="return false;">
+            <input type="text" name="nuevo_item" id="nuevo_item">
+
+            <input type="button" name="add_item" id="add_item" value="Añadir">
+
+        </form>
+
+        <ul id="lista">
+        </ul>
+
+
+    </div>
+    
+</body>
+
+<script>
+    document.getElementById("add_item").addEventListener("click",agregar);
+
+    function agregar(){
+        // leer el valor del input y guardarlo
+        elemento = document.getElementById("nuevo_item").value;
+        if(elemento != ""){
+            //añadirlo al ul
+            document.getElementById("lista").innerHTML += "<li contenteditable='true'>" + elemento + "</li>";
+            // Limpiamos el input
+            document.getElementById("nuevo_item").value="";
+
+
+        }
+    }
+
+
+</script>
+</html>
