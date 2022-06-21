@@ -13,7 +13,7 @@
             border: 1px solid #ccc;
             width: 50%;
             margin: 50px auto;
-            min-height: 100px;
+            min-height: 500px;
         }
 
         h1{
@@ -36,10 +36,17 @@
         #lista{
             width:90%;
             margin: 10px auto;
-            font-size: 20px;
+            font-size: 15px;
         }
         li{
-            width: 50%;
+            width: 75%;
+            margin: 15px 0;
+        }
+
+        .close{
+            float: right;
+            border: 1px solid #ccc;
+            padding: 5px;
         }
     </style>
 </head>
@@ -67,14 +74,34 @@
 <script>
     document.getElementById("add_item").addEventListener("click",agregar);
 
+    
+
+   
+
+
     function agregar(){
         // leer el valor del input y guardarlo
         elemento = document.getElementById("nuevo_item").value;
         if(elemento != ""){
             //añadirlo al ul
-            document.getElementById("lista").innerHTML += "<li contenteditable='true'>" + elemento + "</li>";
+            document.getElementById("lista").innerHTML += "<li>" 
+                + elemento +
+                "<div class='close'>Borrar</div>" +  
+                "</li>";
             // Limpiamos el input
             document.getElementById("nuevo_item").value="";
+
+            // A cada nuevo botón añadido le creamos su función
+            var close = document.getElementsByClassName("close");
+            console.log(close.length);
+           var i;
+            for (i = 0; i < close.length; i++) {
+                close[i].onclick = function() {
+                    var li = this.parentElement;
+                    //li.style.display = "none";
+                    li.remove();
+                }
+            }
 
 
         }
