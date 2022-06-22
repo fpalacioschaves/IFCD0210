@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanzar un dado mogollón de veces</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    function lanza_dados(dados){
+        veces_1 =0;
+        veces_2 = 0;
+        veces_3= 0;
+        veces_4 =0;
+        veces_5 = 0;
+        veces_6 = 0;
+
+        veces = [0,0,0,0,0,0];
+        for(contador=0; contador < dados; contador++){
+            dado = Math.floor(Math.random() * (6) ) + 1;
+            /*if(dado == 1){
+                veces_1++
+            }
+            if(dado == 2){
+                veces_2++
+            }
+            if(dado == 3){
+                veces_3++
+            }
+            if(dado == 4){
+                veces_4++
+            }
+            if(dado == 5){
+                veces_5++
+            }
+            if(dado == 6){
+                veces_6++
+            }*/
+            /*switch(dado){
+                case 1:
+                    veces_1++
+                    break
+                case 2:
+                    veces_2++
+                    break
+                case 3:
+                    veces_3++
+                    break
+                case 4:
+                    veces_4++
+                    break
+                case 5:
+                    veces_5++
+                    break
+                case 6:
+                    veces_6++
+                    break
+                    
+
+            }*/
+            veces[dado-1]++;
+          
+        }
+        document.write("<p>Veces el 1: " + veces[0] + "</p>");
+        document.write("<p>Veces el 2: " + veces[1] + "</p>");
+        document.write("<p>Veces el 3: " + veces[2] + "</p>");
+        document.write("<p>Veces el 4: " + veces[3] + "</p>");
+        document.write("<p>Veces el 5: " + veces[4] + "</p>");
+        document.write("<p>Veces el 6: " + veces[5] + "</p>");
+    }
+
+    lanza_dados(10000000)
+</script>
+</html>
