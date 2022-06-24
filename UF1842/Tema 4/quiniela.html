@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiniela</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    function rellenar_quiniela(){
+        
+        for(contador = 1; contador <=14; contador++){
+            prediccion = Math.floor(Math.random() * 3 );
+            if(prediccion == 0){
+                document.write("Partido " + contador + ": 1")
+            }
+            if(prediccion == 1){
+                document.write("Partido " + contador + ": X")
+            } 
+            if(prediccion == 2){
+                document.write("Partido " + contador + ": 2")
+            }
+          
+            document.write("<br>")
+        }
+
+    }
+
+    rellenar_quiniela();
+</script>
+</html>
