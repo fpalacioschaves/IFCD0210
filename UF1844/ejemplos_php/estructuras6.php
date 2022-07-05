@@ -30,4 +30,6 @@ $meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agost
 foreach($meses as $indice =>$mes){
     echo "$indice $mes <br>";
 }
+
+// cambio para testear git
 ?>
