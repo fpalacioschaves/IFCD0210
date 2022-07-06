@@ -1,12 +1,12 @@
 <?php
 function sumar ( $var1, $var2, $var3 ) {
-$suma = $var1 + $var2 + $var3;
+    $suma = $var1 + $var2 + $var3;
 
-return $suma;
+    return $suma;
 }
 
 function multiplicar ( $num1, $num2 ) {
-return $num1 * $num2;
+    return $num1 * $num2;
 }
 
 $suma = sumar(3,6,9);

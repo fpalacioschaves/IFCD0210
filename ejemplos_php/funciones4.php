@@ -1,5 +1,5 @@
 <?php
-$agenda_proxima_semana = array(
+$agenda_proxima_semana = [
     "lunes" => "Poner lavadora",
     "martes" => "Limpieza de la casa",
     "miercoles" => "Ir al supermercado",
@@ -7,7 +7,7 @@ $agenda_proxima_semana = array(
     "viernes" => "Salir con los colegas",
     "sabado" => "Partido de padle",
     "domingo" => "Descansar"
-);
+];
 
 $agenda_proximo_mes = array(
     "lunes" => "Poner lavadora 2",
@@ -21,8 +21,8 @@ $agenda_proximo_mes = array(
 
 
 function leer_agenda($agenda){
-    foreach($agenda as $key=>$value){
-        echo "El " . $key . " tengo que " . $value . "<br>";
+    foreach($agenda as $dia=>$tarea){
+        echo "El  $dia tengo que  $tarea <br>";
     }
 }
 

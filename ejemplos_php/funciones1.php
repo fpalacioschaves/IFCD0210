@@ -1,6 +1,6 @@
 <?php
 function primera_funcion() {
-echo 'Hola mundo';
+    echo 'Hola mundo';
 }
 
 
