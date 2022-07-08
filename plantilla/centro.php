@@ -4,7 +4,7 @@
 
 <section class="contenido">
 
-    <?php blog(12); ?>
+    <?php blog(9); ?>
 
 </section>
 

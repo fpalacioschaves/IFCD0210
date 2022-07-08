@@ -7,5 +7,9 @@ function blog($numero_items){
 
 }
 
+function saludar(){
+    echo "Hola, tronco, pasa contigo...";
+}
+
 
 ?>

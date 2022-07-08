@@ -36,7 +36,7 @@ echo "<hr>";
 // hasta la fecha que se le indique
 
 $d=strtotime("10:30pm April 15 2014");
-echo $d;
+//echo $d;
 echo "Created date is " . date("d  m  Y h:i:sa", $d);
 
 echo "<hr>";

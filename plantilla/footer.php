@@ -1,6 +1,7 @@
 <footer>
         
         <div class="footer1">
+            <h3><?php saludar();?>
             <nav>
                 <ul class="menu_secundario">
                     <li><a href="#">Política de Privacidad</a></li>
