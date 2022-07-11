@@ -22,22 +22,21 @@ body{
 }
 
 .card{
-    border:0;
+    width: 260px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    margin: 20px 0;
+    /*border:0;
     background: #fff;
     border-radius: 2px;
-    width: 300px;
-    width: 180px;
-    height: 280px;
+    
+    min-height: 280px;
     margin: 20px 0;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    */
 }
 
 .banner{
-    background-color: #fff;
-    border: 0;
     margin: 20px 0;
     border-radius: 2px;
-
     min-height: 200px;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
@@ -87,11 +86,13 @@ body{
 }
 
 
-.login{
+.login i{
    text-align: center;
-   font-size: 90px;
+   font-size: 75px;
   cursor: pointer;
 }
+
+
 .redes_container{
    display: flex;
    font-size: 40px;

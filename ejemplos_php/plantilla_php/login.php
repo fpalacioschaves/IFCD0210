@@ -31,7 +31,7 @@
 
     <main class="row">
         <!-- Parte central-->
-        <?php include("main_home.php");?>
+        <?php include("main_login.php");?>
         <!--Fin de la parte central-->
 
 
