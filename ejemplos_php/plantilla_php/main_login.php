@@ -23,6 +23,9 @@
            if($usuario == "user" && $password == "1234"){
             $_SESSION["usuario"] = "user";
             $_SESSION["password"] = "1234";
+
+            // Me lleva a la página de inicio
+            header("Location: index.php");
            }
            else{
             echo "Hay un error en sus datos";

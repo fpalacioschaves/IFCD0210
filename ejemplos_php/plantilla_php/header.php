@@ -23,6 +23,10 @@
         </div>
         <div class="col-2 login">
             <i class="bi bi-person-workspace"></i>
-            <p>Hola, <?php echo $_SESSION["usuario"];?></p>
+            <?php 
+            if(isset($_SESSION["usuario"])){
+                echo "<p>Hola, ".$_SESSION["usuario"]."</p>";
+             } 
+             ?>
         </div>
     </header>
