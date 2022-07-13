@@ -17,7 +17,14 @@
                     <a href="">Contacto</a>
                </li>
                <li class="menu_sup_item">
-                    <a href="login.php">Login</a>
+                    <?php
+                    if(isset($_SESSION["usuario"])){
+                         echo "<a href='logout.php'>Logout</a>";
+                    }
+                    else{
+                         echo "<a href='login.php'>Login</a>";
+                    }
+                    ?>
                </li>
             </ul>
         </div>
