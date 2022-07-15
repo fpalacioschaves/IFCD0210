@@ -16,7 +16,7 @@ $conexion = new mysqli($dbserver, $dbuser, $password, $dbname);
 	
 
 	
-$consulta = $conexion->query( "SELECT * FROM `empresas`");
+$consulta = $conexion->query( "SELECT nombre_empresa FROM `empresas`");
 
 $resultado = $consulta->fetch_all(MYSQLI_ASSOC);
 

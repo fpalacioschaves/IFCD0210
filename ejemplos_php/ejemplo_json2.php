@@ -15,14 +15,4 @@ $articulo->precioDeSalida = "$3 500";
 $articulo->detalles = array('Soporta juegos para Gameboy advance','Pantalla tactil','Reproducción de MP3');
 echo json_encode($articulo);
 
-$select = array(
-    "Madrid"        => "España",
-    "Paris"         => "Francia",
-    "Londres"       => "Inglaterra",
-    "Washingtown"   => "EEUU",
-    "Roma"          => "Italia"
-);
-echo "<br>";
-echo json_encode($select);
-
 ?>
