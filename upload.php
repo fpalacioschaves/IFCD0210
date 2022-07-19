@@ -15,7 +15,8 @@ if (isset($_POST['uploadBtn']) && $_POST['uploadBtn'] == 'Upload')
     $fileType = $_FILES['uploadedFile']['type'];
     $fileNameCmps = explode(".", $fileName);
     $fileExtension = strtolower(end($fileNameCmps));
-
+    echo "Nombre: $fileName<br>";
+    echo "Tipo: $fileType<br>";
     echo $fileSize;
 
     // sanitize file-name
@@ -31,15 +32,15 @@ if (isset($_POST['uploadBtn']) && $_POST['uploadBtn'] == 'Upload')
       $uploadFileDir = './uploaded_files/';
       $dest_path = $uploadFileDir . $newFileName;
 
-      if(move_uploaded_file($fileTmpPath, $dest_path)) 
-      {
+        if(move_uploaded_file($fileTmpPath, $dest_path)) 
+        {
 
-        $message ='File is successfully uploaded.';
-      }
-      else 
-      {
-        $message = 'There was some error moving the file to upload directory. Please make sure the upload directory is writable by web server.';
-      }
+          $message ='File is successfully uploaded.';
+        }
+        else 
+        {
+          $message = 'There was some error moving the file to upload directory. Please make sure the upload directory is writable by web server.';
+        }
     }
     else
     {
@@ -53,4 +54,4 @@ if (isset($_POST['uploadBtn']) && $_POST['uploadBtn'] == 'Upload')
   }
 }
 $_SESSION['message'] = $message;
-//header("Location: form_upload.php");
+header("Location: form_upload.php");
