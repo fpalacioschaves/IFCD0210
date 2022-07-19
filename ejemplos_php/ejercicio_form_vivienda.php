@@ -9,6 +9,7 @@
     <form method="post" action="formvivienda.php">
         <fieldset>
             Selecciona el tipo de vivienda: <select name="vivienda">
+                <option value="0">Elija una opción</option>
                 <option value="adosado">Adosado</option>
                 <option value="unifamiliar">Unifamiliar</option>
                 <option value="piso">Piso</option>

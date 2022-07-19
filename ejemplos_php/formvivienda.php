@@ -1,13 +1,28 @@
 <?php
-$tipo = @$_POST['vivienda'];
-$zona = @$_POST['zona'];
-$habitaciones = @$_POST['habitaciones'];
-$precio = @$_POST['precio'];
-$tamano = @$_POST['tamano'];
-$garaje = @$_POST['Garaje'];
-$trastero = @$_POST['Trastero'];
-$piscina = @$_POST['Piscina'];
-$observaciones = @$_POST['observaciones'];
+$tipo = $_POST['vivienda'];
+
+$zona = $_POST['zona'];
+$habitaciones = $_POST['habitaciones'];
+$precio = $_POST['precio'];
+$tamano = $_POST['tamano'];
+
+
+
+
+$garaje = $_POST['Garaje'];
+
+$garaje = isset($_POST['Garaje']) ? $_POST["Garage"] : "";
+
+
+
+
+
+if(isset($_POST["trastero"])){
+    $trastero = $_POST['Trastero'];
+}
+
+$piscina = $_POST['Piscina'];
+$observaciones = $_POST['observaciones'];
 echo "<h2>Inserción de vivienda</h2>";
 if ($tipo == NULL || $precio == NULL) {
     echo "Debes introducir el tipo de vivienda y su precio<br>";
@@ -26,7 +41,7 @@ if ($tipo == NULL || $precio == NULL) {
     if ($garaje) {
         echo "$garaje,";
     }
-    if ($trastero) {
+    if (isset($trastero)) {
         echo "$trastero,";
     }
     if ($piscina) {
