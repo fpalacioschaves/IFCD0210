@@ -56,6 +56,13 @@ class LibroAntiguo extends Libro{
         parent::resumen();
         echo "Año de la primera edición: $this->anyo<br>";
     }
+
+    public function __toString()
+    {
+        return "Artículo: $this->nombre || Precio: ".$this->pvp()."<br>".
+        "Año de la primera edición: $this->anyo<br>";
+    
+    }
 }
 /*
 $producto1 = new Producto("Bolígrafo");
@@ -73,10 +80,11 @@ $cd1->longitud = 5;
 $cd1->resumen();
 */
 
-$libro = new Libro("Un Mundo Feliz", 30, 350);
-$libro->resumen();
+//$libro = new Libro("Un Mundo Feliz", 30, 350);
+//$libro->resumen();
 
 $libro_antiguo = new LibroAntiguo("El Quijote", 100, 1300,1605 );
-$libro_antiguo->resumen();
+//$libro_antiguo->resumen();
+echo $libro_antiguo;
 
 ?>
