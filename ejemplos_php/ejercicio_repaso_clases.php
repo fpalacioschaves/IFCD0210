@@ -38,8 +38,8 @@ class Factura{
         echo "<p>Factura</p>";
         echo "<p>Fecha: $this->fecha</p>";
         echo "<p>Importe Base: $this->base €</p>";
-        echo "Impuestos: " . $neto . " €</p>";
-        echo "Total: " . ($this->base + $neto) . " €</p>";
+        echo "<p>Impuestos: " . $neto . " €</p>";
+        echo "<p>Total: " . ($this->base + $neto) . " €</p>";
         echo "<p>Estado de la factura: $this->estado</p>";
     } 
 
