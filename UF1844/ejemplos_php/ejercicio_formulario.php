@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="formulario" method="POST" action="pedidos.php">
-    Nombre y apellidos: <input type="text" name="nombre_y_apellidos" required><br>
+    Nombre y apellidos: <input type="text" name="nombre_y_apellidos"><br>
     Dirección: <input type="text" name="direccion" required><br>
     Teléfono: <input type="text" name="telefono" required><br>
     <hr>
