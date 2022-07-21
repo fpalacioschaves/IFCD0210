@@ -1,5 +1,5 @@
 <style>
-    .menu {
+    .menu ul {
         list-style: none;
         display: flex;
         width: 50%;
@@ -36,6 +36,23 @@ class Menu{
         echo "</ul>";
     }
 }
+
+class MenuPlus extends Menu{
+    public $estilo;
+
+    public function setEstilo($estilo){
+        $this->estilo = $estilo;
+    }
+
+    public function pintaMenu()
+    {
+        
+        echo "<div class='$this->estilo'>";
+        parent::pintaMenu();    
+        echo "</div>";
+    }
+}
+
 $array_menu = [
     "Inicio"    =>  "index.php",
     "Tienda"    =>  "shop.php",
@@ -45,3 +62,9 @@ $array_menu = [
 $menu = new Menu;
 $menu->setMenu($array_menu);
 $menu->pintaMenu();
+
+
+$menu2 = new MenuPlus;
+$menu2->setMenu($array_menu);
+$menu2->setEstilo("menu");
+$menu2->pintaMenu();
