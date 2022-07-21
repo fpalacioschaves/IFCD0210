@@ -1,12 +1,12 @@
 <?php
 
 if($_POST){
-
+    var_dump($_POST);
    
     $nombre_y_apellidos = $_POST["nombre_y_apellidos"];
     $direccion = $_POST["direccion"];
     $telefono = $_POST["telefono"];
-
+    echo $_POST["patatas"];
     $patatas = intval($_POST["patatas"]);
     $cebollas = intval($_POST["cebollas"]);
     $pimientos = intval($_POST["pimientos"]);
