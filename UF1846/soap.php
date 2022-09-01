@@ -5,6 +5,6 @@ $result = $client->ResolveIP($param);
 echo "<pre>";
 print_r($result); 
 echo "</pre>";
-//echo $result->ResolveIPResult->City;
+echo $result->ResolveIPResult->City;
 
 ?>
