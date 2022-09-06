@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDB";
+$username = "root";
+$password = "";
+$dbname = "gestion_practicas";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -11,7 +11,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, nombre, apellidos FROM alumnos";
+$sql = "SELECT * FROM alumnos";
 $result = $conn->query($sql);
 $result->fetch_assoc();
 
