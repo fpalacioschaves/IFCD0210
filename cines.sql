@@ -23,7 +23,7 @@ USE `cines`;
 --
 
 CREATE TABLE `movies` (
-  `Code` int(11) NOT NULL,
+  `Code` int(11) NOT NULL PRIMARY KEY AUTO INCREMENT,
   `Title` varchar(255) NOT NULL,
   `Rating` varchar(255) DEFAULT NULL,
   `Money` int(11) NOT NULL
@@ -50,7 +50,7 @@ INSERT INTO `movies` (`Code`, `Title`, `Rating`, `Money`) VALUES
 --
 
 CREATE TABLE `movietheaters` (
-  `Code` int(11) NOT NULL,
+  `Code` int(11) NOT NULL PRIMARY KEY AUTO INCREMENT,
   `Name` varchar(255) NOT NULL,
   `Movie` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -71,17 +71,11 @@ INSERT INTO `movietheaters` (`Code`, `Name`, `Movie`) VALUES
 -- Índices para tablas volcadas
 --
 
---
--- Indices de la tabla `movies`
---
-ALTER TABLE `movies`
-  ADD PRIMARY KEY (`Code`);
 
 --
 -- Indices de la tabla `movietheaters`
 --
 ALTER TABLE `movietheaters`
-  ADD PRIMARY KEY (`Code`),
   ADD KEY `Movie` (`Movie`);
 
 --
