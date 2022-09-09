@@ -19,6 +19,7 @@
 
     <label for="rating" class="form-label">Rating</label>
     <select name="rating" class="form-control">
+        <option value="-1" disabled selected>Seleccione una opción</option>
         <option value="PG">PG</option>
         <option value="G">G</option>
         <option value="NC-17">NC-17</option>
@@ -50,7 +51,7 @@
 
         $resultado_consulta = $conexion->query($consulta);
 
-        header("Location: index3.php");
+        header("Location: index.php");
 
 
 

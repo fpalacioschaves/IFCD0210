@@ -10,12 +10,14 @@
 </head>
 <body>
 
+<a href="add_movie.php" class="btn btn-success">Añadir película</a>
+
 <?php
 include("funciones.php");
 
 $conexion = conectar_bd();
 
-$consulta = "SELECT * FROM movies";
+$consulta = "SELECT * FROM movies ORDER BY Title, Money";
 
 $resultado_consulta = $conexion->query($consulta); //hace la consulta
 
@@ -26,18 +28,25 @@ echo "<table class='table table-striped table-hover'>
             <td>Título</td>
             <td>Rating</td>
             <td>Recaudación</td>
+            <td>Acciones</td>
         </tr>";
 foreach($resultado_consulta as $pelicula){
-    echo '<tr>
-            <td>' . $pelicula["Title"] . '</td>' .
+    echo '<tr>'.
+            '<td>' . $pelicula["Title"] . '</td>' .
             '<td>' . $pelicula["Rating"] . '</td>' .
             '<td>' . $pelicula["Money"] . '</td>' .
+            '<td>
+            <a href="editar_pelicula.php?id_pelicula='.$pelicula["Code"].'">Editar</a>
+             - 
+            <a href="borrar_pelicula.php?id_pelicula='.$pelicula["Code"].'">Borrar</a>
+             </td>' .
             '</tr>';
 }
 echo "<tr>
         <td>Título</td>
         <td>Rating</td>
         <td>Recaudación</td>
+        <td>Acciones</td>
     </tr>
 </table>";
 

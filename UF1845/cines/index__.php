@@ -10,14 +10,12 @@
 </head>
 <body>
 
-<a href="add_movie.php" class="btn btn-success">Añadir película</a>
-
 <?php
 include("funciones.php");
 
 $conexion = conectar_bd();
 
-$consulta = "SELECT * FROM movies LEFT JOIN movietheaters ON movietheaters.Movie = Movies.Code";
+$consulta = "SELECT * FROM movies";
 
 $resultado_consulta = $conexion->query($consulta); //hace la consulta
 
@@ -25,22 +23,18 @@ $resultado_consulta->fetch_assoc();
 
 echo "<table class='table table-striped table-hover'>
         <tr>
-            <td>Cine</td>
             <td>Título</td>
             <td>Rating</td>
             <td>Recaudación</td>
-            <td>Acciones</td>
         </tr>";
 foreach($resultado_consulta as $pelicula){
     echo '<tr>
-            <td>' . $pelicula["Name"] . '</td>' .
-            '<td>' . $pelicula["Title"] . '</td>' .
+            <td>' . $pelicula["Title"] . '</td>' .
             '<td>' . $pelicula["Rating"] . '</td>' .
             '<td>' . $pelicula["Money"] . '</td>' .
             '</tr>';
 }
 echo "<tr>
-        <td>Cine</td>
         <td>Título</td>
         <td>Rating</td>
         <td>Recaudación</td>
