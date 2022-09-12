@@ -28,7 +28,7 @@ $resultado_consulta = $conexion->query($consulta); //hace la consulta
 
 $resultado_consulta->fetch_assoc();
 
-echo "<table class='table table-striped table-hover'>
+echo "<table class='table table-striped table-hover' id='tabla_cines'>
         <tr>
             <td>Título</td>
             <td>Rating</td>
