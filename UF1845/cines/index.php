@@ -11,12 +11,20 @@
 </head>
 <body>
 
+<style>
+    #titulo:hover{
+        cursor: pointer;
+    }
+</style>
+
 <a href="add_movie.php" class="btn btn-success">Añadir película</a>
 Ordenar películas:
 <select name="ordenar" id="ordenar" onchange="ordenar();">
     <option value="asc">ASC</option>
     <option value="desc">DESC</option>
 </select>
+
+Filtrar: <input type="text" id="filtro" name="filtro" onkeyup="filtrar();">
 <?php
 include("funciones.php");
 
@@ -28,13 +36,14 @@ $resultado_consulta = $conexion->query($consulta); //hace la consulta
 
 $resultado_consulta->fetch_assoc();
 
-echo "<table class='table table-striped table-hover' id='tabla_cines'>
+echo "<table class='table table-striped table-hover'>
         <tr>
-            <td>Título</td>
+            <td id='titulo' onclick='reordenar_titulo()' data-orden='DESC'>Título</td>
             <td>Rating</td>
             <td>Recaudación</td>
             <td>Acciones</td>
         </tr>";
+echo "<tbody id='tabla_cines'>";
 foreach($resultado_consulta as $pelicula){
     echo '<tr>'.
             '<td>' . $pelicula["Title"] . '</td>' .
@@ -47,6 +56,7 @@ foreach($resultado_consulta as $pelicula){
              </td>' .
             '</tr>';
 }
+echo "</tbody>";
 echo "<tr>
         <td>Título</td>
         <td>Rating</td>

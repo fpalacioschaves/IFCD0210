@@ -3,9 +3,9 @@ include("funciones.php");
 
 $conexion = conectar_bd();
 
-$orden = $_GET["orden"];
+$filtro = $_GET["filtro"];
 
-$consulta = "SELECT * FROM movies ORDER BY Title $orden , Money";
+$consulta = "SELECT * FROM movies WHERE Title LIKE '$filtro%' ORDER BY Title , Money";
 
 $resultado_consulta = $conexion->query($consulta); //hace la consulta
 
