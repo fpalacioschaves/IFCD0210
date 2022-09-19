@@ -12,7 +12,7 @@
 <body>
 
 <style>
-    #titulo:hover{
+    #titulo:hover, #rating:hover{
         cursor: pointer;
     }
 </style>
@@ -39,7 +39,7 @@ $resultado_consulta->fetch_assoc();
 echo "<table class='table table-striped table-hover'>
         <tr>
             <td id='titulo' onclick='reordenar_titulo()' data-orden='DESC'>Título</td>
-            <td>Rating</td>
+            <td id='rating' onclick='reordenar_rating()' data-orden='DESC'>Rating</td>
             <td>Recaudación</td>
             <td>Acciones</td>
         </tr>";
