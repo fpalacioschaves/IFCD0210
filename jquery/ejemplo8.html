@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <title>Modificando el DOM</title>
+</head>
+<body>
+
+    <div class="parrafo" style="border: 1px solid #ccc; width: 75%; margin: 0 auto;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, atque tempora sapiente, commodi, saepe laudantium laborum quidem nesciunt iure veniam et nemo voluptates quo beatae molestiae quibusdam cum dolorem voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, atque tempora sapiente, commodi, saepe laudantium laborum quidem nesciunt iure veniam et nemo voluptates quo beatae molestiae quibusdam cum dolorem voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, atque tempora sapiente, commodi, saepe laudantium laborum quidem nesciunt iure veniam et nemo voluptates quo beatae molestiae quibusdam cum dolorem voluptatibus.</p>
+    
+    </div>
+
+    <button class="abrir">Abrir</button>
+
+    <button class="cerrar">Cerrar</button>
+    
+</body>
+<script>
+    $(document).ready(function(){
+        $(".cerrar").click(function(){
+            $(".parrafo").fadeTo(1000,"0.5");
+        });
+
+        $(".abrir").click(function(){
+            $(".parrafo").fadeTo(1000, "1");
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <title>Modificando el DOM</title>
+</head>
+<body>
+    <p class="parrafo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ea sequi molestias a possimus? Minus placeat ab porro, distinctio explicabo ut tenetur obcaecati necessitatibus est ad amet ipsa deserunt nulla.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae maxime ducimus, possimus debitis, consequuntur veniam quasi ut officia velit amet nisi rerum voluptatibus aut cumque et doloribus consequatur asperiores. Ex.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quas veniam dicta in recusandae laboriosam mollitia cum officiis aliquam natus, voluptatibus iusto eos. Error necessitatibus nemo, ad vel ipsam porro.
+    </p>
+
+    <button class="boton">Abre/cierra</button>
+
+  
+</body>
+<script>
+    $(document).ready(function(){
+
+        $(".boton").click(function(){
+            $(".parrafo").toggle("1000");
+        })
+       
+
+        
+
+       
+    });
+</script>
+</html>

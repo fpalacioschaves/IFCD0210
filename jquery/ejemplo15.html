@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <title>Modificando el DOM</title>
+</head>
+<body>
+
+   <style>
+    .class1{
+        background-color: yellow;
+        width: 500px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .class2{
+        background-color: blue;
+        width: 200px;
+        height: 500px;
+        margin: 0 auto;
+    }
+   </style>
+
+   <div class="class1" id="caja"></div>
+
+    <button class="boton1">Cambiar a clase 2</button>
+
+    <!--<button class="boton2">Cambiar a clase 1</button>-->
+   
+</body>
+<script>
+    $(document).ready(function(){
+
+    $(document).on("click",".boton1", function(){
+        $("#caja").toggleClass("class1").toggleClass("class2");
+
+    })  
+    
+    /*$(document).on("click",".boton2", function(){
+        $(".class2").addClass("class1").removeClass("class2");
+
+    })*/  
+
+       
+       
+
+        
+    });
+</script>
+</html>
