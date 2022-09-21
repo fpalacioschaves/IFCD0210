@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Ajax serialize form data example</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#button").click(function () {
+          var dataString = $("#serializeForm").serialize();
+          $.ajax({
+            type: "POST",
+            url: "upload.php",
+            data: dataString,
+            success: function (data) {
+              $(".info").html(data);
+              $("#serializeForm")[0].reset();
+            },
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="serializeForm" name="myForm">
+        <div class="form-group">
+          <label>Enter name:</label>
+          <input type="text" id="name" name="name" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>Enter Email:</label>
+          <input type="text" id="email" name="email" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>Enter Message:</label>
+          <textarea name="message" id="message" class="form-control"></textarea>
+        </div>
+        <a class="btn btn-primary" id="button">
+          Submit
+        </a>
+      </form>
+
+      <div class="info"></div>
+    </div>
+  </body>
+</html>
