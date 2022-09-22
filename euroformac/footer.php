@@ -1,6 +1,7 @@
-<footer>
+ <!-- Inicio del Footer -->
+ <footer>
         
-        <!--<div class="footer1">
+        <div class="footer1">
             <nav>
                 <ul class="menu_secundario">
                     <li><a href="#">Política de Privacidad</a></li>
@@ -23,29 +24,9 @@
             <a href="#"><i class="bi bi-twitter"></i></a>
             <a href="#"><i class="bi bi-linkedin"></i></a>
         </div>
-        -->
-
-        <?php if ( is_active_sidebar( 'footer-izquierda' ) ) : ?>
-         <div id="widget-area" class="widget-area">
-            <?php dynamic_sidebar( 'footer-izquierda' ); ?>
-         </div>
-        <?php endif; ?>
-
-        <?php if ( is_active_sidebar( 'footer-centro' ) ) : ?>
-         <div id="widget-area" class="widget-area">
-            <?php dynamic_sidebar( 'footer-centro' ); ?>
-         </div>
-        <?php endif; ?>
-
-        <?php if ( is_active_sidebar( 'footer-derecha' ) ) : ?>
-         <div id="widget-area" class="widget-area">
-            <?php dynamic_sidebar( 'footer-derecha' ); ?>
-         </div>
-        <?php endif; ?>
 
     </footer>
-
-    <?php wp_footer() ?>
-    
+    <!-- Fin del Footer -->
+    <?php wp_footer(); ?>
 </body>
 </html>

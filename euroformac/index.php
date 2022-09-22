@@ -1,61 +1,92 @@
-<?php get_header(); ?>
 
+   <?php get_header();?>
+
+    <!-- Inicio Parte central -->
     <div class="container">
 
+        <!-- Inicio Parte izquierda -->
         <div class="izquierda">
 
-            <h1>Blog</h1>
+        <h1>Blog</h1>
+        <!-- Inicio del Loop -->
+        <section class="contenido">
+        <?php
 
-            <section class="contenido">
+            if ( have_posts() ) :
+                    while ( have_posts() ) : the_post();
+                    
+                    $contenido = get_the_content();
+                    $extracto = substr($contenido, 0, 100);
+                    ?>
 
-                <?php
-                if ( have_posts() ) :
-                    while ( have_posts() ) : the_post(); ?>
-                
                 <article>
-                    <!--<div class="imagen" style="background-image: url('./img/card_image.jpg');"></div>-->
-                    <div class="imagen">
-                        <?php the_post_thumbnail();?>
-                    </div>
+                    <div class="imagen" style="background-image: url('<?php echo get_stylesheet_directory_uri();?>/img/card_image.jpg');"></div>
 
-                    <div class="titulo"><?php the_title();?></div>
+                    <div class="titulo"><?php the_title() ?></div>
 
                     <div class="contenido_article">
-                        <?php the_excerpt();?>
+                    <?php echo $extracto; ?>...
                     </div>
 
                     <div class="leer_mas">
                         <a href="<?php the_permalink();?>">Leer más</a>
                     </div>
                 </article>
-                    
+
+                        <h2><?php //the_title() ?></h2>
+                        <?php //the_content() ?>
+
                     <?php endwhile;
-                
-                else :
+
+            else :
                     echo '<p>There are no posts!</p>';
-                
-                endif;
 
+            endif;
 
-                ?>
-
-                
-
-            </section>
+        ?>
+        </section>
+        <!-- Fin del Loop -->
 
         </div>
-
+        <!-- Fin Parte izquierda -->
     
+        <!-- Inicio Aside -->
         <aside>
             <div class="aside_block">
-            <?php if ( is_active_sidebar( 'aside' ) ) : ?>
-         <div id="widget-area" class="widget-area">
-            <?php dynamic_sidebar( 'aside' ); ?>
-         </div>
-        <?php endif; ?>
+            <h2>Buscar:</h2>
+            <?php get_search_form();?>
+        </div>
+
+        
+            <div class="aside_block">
+                
+                <h2>Los más visitados</h2>
+                <ul class="aside_list">
+                    <li>
+                        Item 1
+                    </li>
+
+                    <li>
+                        Item 2
+                    </li>
+
+                    <li>
+                        Item 3
+                    </li>
+
+                    <li>
+                        Item 4
+                    </li>
+
+                    <li>
+                        Item 5
+                    </li>
+                </ul>
             </div>
         </aside>
+        <!-- Fin Aside -->
 
     </div>
+     <!-- Fin Parte central -->
 
- <?php get_footer();?>
+     <?php get_footer();?>
