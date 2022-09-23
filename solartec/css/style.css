@@ -525,7 +525,8 @@
 
 /*** Footer ***/
 .footer .btn.btn-social {
-    margin-right: 5px;
+    margin-right: 10px;
+    float: left;
     color: #9B9B9B;
     border: 1px solid #9B9B9B;
     border-radius: 38px;
