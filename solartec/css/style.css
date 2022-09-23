@@ -576,11 +576,19 @@
 }
 
 #menu-menu-principal{
-    width: 100%;
+    width: 66%;
+    float: right;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     list-style: none;
     text-transform: uppercase;
+}
+
+#menu-menu-principal li{ 
+    width: 128px;
+    text-align: center;
+
+    margin-top: 20px;
 }
 
 #menu-menu-principal a{
