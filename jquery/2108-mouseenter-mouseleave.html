@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  
+  <head> 
+  <meta charset = "utf-8">
+    <title>Detección de la entrada y salida del ratón, de un elemento</title>
+    <script src='jquery-3.2.1.min.js'></script>
+   </head>
+   <body>
+     <h2 id='test'>Pasa el botón sobre mí</h2>
+     <script>
+       $('#test').mouseenter(function() { $(this).html('Oye, deja de hacerme cosquillas!') } )
+       $('#test').mouseleave(function()  { $(this).html('Dónde has ido?')  } )
+</script>
+</body>
+</html>
+

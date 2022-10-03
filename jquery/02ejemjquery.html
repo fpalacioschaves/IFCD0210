@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	 <meta charset="utf-8" />
+     <title>Uso de jQuery con diferentes selectores</title>
+     <script> src='jquery-ui.min.js'></script>
+  </head>	 
+  <body>
+      <blockquote>Powerful and flexible as JavaScript is, with a
+      plethora of built-in functions, it is still necessary to use
+      additional code for simple things that cannot be achieved
+      natively or with CSS, such as animations, event handling,
+      and asynchronous communication.</blockquote>
+    <div id='advert'>This is an ad</div>
+    <p>This is my <span class='new'>new</span> website</p>
+    <script>
+      jQuery('blockquote').css('background', 'lime')
+      jQuery('#advert').css('border', '3px dashed red')
+      jQuery('.new').css('text-decoration', 'underline')
+      jQuery('blockquote, #advert, .new').css('font-weight', 'bold')
+	</script>	
+   </body>	  
+</html>
