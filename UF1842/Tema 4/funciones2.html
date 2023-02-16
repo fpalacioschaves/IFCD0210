@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* Función para calcular el area de un rectángulo */
+        function area(base,altura){
+            area_rectangulo = base * altura;
+            return area_rectangulo;
+        }
+
+        /* Funcion para calcular el mayor de dos números */
+        function comparar(a,b){
+            if(a > b){
+                comparacion = "El mayor es " + a;
+            }
+            else if(b > a){
+                comparacion = "El mayor es " + b;
+            }
+            else{
+                comparacion = "Son iguales";
+            }
+
+            return comparacion;
+        }
+
+        /* Funcion para ver si es o no es mayor de edad */
+        function edad(years){
+            if( years >= 18){
+                return "Es mayor de edad";
+            }
+            else{
+                return "No es mayor de edad";
+            }
+        }
+
+
+        /* Función para pintar una bienvenida con nombre y apellidos */
+        function saludar(nombre, apellidos){
+            
+            document.write("<h1>Bienvenido " + nombre + " " + apellidos + "</h1>");
+
+        }
+        
+        /* Funcion para calcular si un numero es par o impar*/
+        function par(numero){
+            resto = numero % 2;
+            if( resto == 0){
+                return "Es par";
+            }
+            else{
+                return "Es impar";
+            }
+
+        }
+
+        resultado = par(356746746745);
+        document.write(resultado)
+        
+        /*nombre = window.prompt("Dime tu nombre");
+        apellidos = window.prompt("Dime tus apellidos");
+        nombre = "dgdgsdfg";
+        apellidos = "dfgsgzdfghshs";
+        saludar(nombre, apellidos);*/
+        
+        /*resultado = edad(88);
+        alert(resultado);
+        document.write(resultado);
+        resultado = comparar(4345,10);
+
+        document.write(resultado);
+
+        resultado = area(10,5);
+        document.write(resultado);*/
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

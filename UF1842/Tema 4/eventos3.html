@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .div1{
+            width: 50%;
+            height: 400px;
+            background-color: red;
+            margin: 0 auto;
+        }
+
+        #mi_otro_div{
+            width: 25%;
+            height: 100px;
+            background-color: grey;
+            margin: 100px auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="mi_div" class="div1">
+        <h1>Esto es un h1</h1>
+    </div>
+
+    <div id="mi_otro_div"></div>
+</body>
+<script>
+    document.getElementById("mi_otro_div").addEventListener("mouseover", dentro);
+
+    document.getElementById("mi_otro_div").addEventListener("mouseout", fuera);
+
+    function dentro(){
+        mi_elemento = document.getElementById("mi_div");
+        mi_elemento.style.backgroundColor = "green";
+    }
+
+    function fuera(){
+        mi_elemento = document.getElementById("mi_div");
+        mi_elemento.style.backgroundColor = "red";
+    }
+
+    
+</script>
+</html>

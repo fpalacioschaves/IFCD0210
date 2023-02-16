@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="./arbol.jpg" onmouseover="cambia()" onmouseout="descambia()" id="arbolito">
+    
+</body>
+
+<script>
+
+   
+var intervalo = null;
+    function cambia(){
+        imagen = document.getElementById("arbolito");
+        intervalo = setInterval(transparentar,10);
+        var opacidad = 1;
+        function transparentar(){
+            if(opacidad <  0.50){
+                clearInterval(intervalo)
+            }
+            else{
+                opacidad = opacidad - 0.01;
+                imagen.style.opacity = opacidad;
+            }
+        }
+    }
+
+    function descambia(){
+        imagen = document.getElementById("arbolito");
+        intervalo = setInterval(destransparentar,10);
+        var opacidad = 0.5;
+        function destransparentar(){
+            if(opacidad > 0.99){
+                clearInterval(intervalo)
+            }
+            else{
+                opacidad = opacidad + 0.01;
+                imagen.style.opacity = opacidad;
+            }
+        }
+    }
+</script>
+</html>

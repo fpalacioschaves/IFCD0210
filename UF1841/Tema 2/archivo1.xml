@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+
+<pedidos>
+
+	<pedido>
+	
+		<nombre>Juan Delgado</nombre>
+		<domicilio>Calle Barco 23, 1 C</domicilio>
+		<fecha>23/05/2055</fecha>
+		<articulo>Bicicleta</articulo>
+		
+	</pedido>
+	
+	<pedido>
+	
+		<nombre>Juan Delgado</nombre>
+		<domicilio>Calle Barco 23, 1 C</domicilio>
+		<fecha>25/05/2055</fecha>
+		<articulo>Casco de bicicleta</articulo>
+		
+	</pedido>
+	
+</pedidos>

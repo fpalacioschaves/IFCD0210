@@ -1,0 +1,478 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: postem-ipsum\n"
+"POT-Creation-Date: 2018-11-19 10:11+0100\n"
+"PO-Revision-Date: 2018-11-19 10:12+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/postem-ipsum-admin.php:209 admin/postem-ipsum-admin.php:210
+msgid "Generic Posts"
+msgstr "Generar posts"
+
+#: admin/postem-ipsum-admin.php:241 admin/postem-ipsum-admin.php:242
+msgid "Users"
+msgstr "Usuarios"
+
+#: admin/postem-ipsum-admin.php:251 admin/postem-ipsum-admin.php:252
+msgid "Taxonomy terms"
+msgstr "Términos"
+
+#: admin/postem-ipsum-admin.php:295
+msgid "There arent taxonomies"
+msgstr "No existen taxonomías"
+
+#: admin/postem-ipsum-admin.php:315
+msgid "There arent terms"
+msgstr "No existen terms"
+
+#: admin/postem-ipsum-admin.php:1286
+msgid "Meta field id?"
+msgstr "Id del metabox?"
+
+#: admin/postem-ipsum-admin.php:1292
+msgid "Select Meta field Type"
+msgstr "Seleccione tipo de metabox"
+
+#: admin/postem-ipsum-admin.php:1295
+msgid "Select a meta field type"
+msgstr "Seleccione tipo de metabox"
+
+#: admin/postem-ipsum-admin.php:1296
+msgid "Single text"
+msgstr "Texto"
+
+#: admin/postem-ipsum-admin.php:1297
+msgid "Textarea"
+msgstr "Textarea"
+
+#: admin/postem-ipsum-admin.php:1298
+msgid "Select list"
+msgstr "Select"
+
+#: admin/postem-ipsum-admin.php:1299
+msgid "Checkboxes"
+msgstr "Checkboxes"
+
+#: admin/postem-ipsum-admin.php:1300
+msgid "Radio"
+msgstr "Radio"
+
+#: admin/postem-ipsum-admin.php:1301
+msgid "Date"
+msgstr "Fecha"
+
+#: admin/postem-ipsum-admin.php:1302
+msgid "Color"
+msgstr "Color"
+
+#: admin/postem-ipsum-admin.php:1303
+msgid "URL"
+msgstr "URL"
+
+#: admin/postem-ipsum-admin.php:1312
+msgid "Select Values (separate by commas)"
+msgstr "Valores del Select (separados por comas)"
+
+#: admin/views/postem_ipsum_get_taxonomies.php:1
+#: admin/views/postem_ipsum_settings.php:36
+#: admin/views/postem_ipsum_terms_settings.php:36
+msgid "Select Taxonomy"
+msgstr "Seleccione Taxonomía"
+
+#: admin/views/postem_ipsum_get_terms.php:1
+msgid "Select Term/Category"
+msgstr "Seleccione término/categoría"
+
+#: admin/views/postem_ipsum_get_terms.php:3
+#: admin/views/postem_ipsum_settings.php:38
+#: admin/views/postem_ipsum_settings.php:60
+#: admin/views/postem_ipsum_settings.php:266
+#: admin/views/postem_ipsum_woo_settings.php:18
+msgid "Random"
+msgstr "Aleatorio"
+
+#: admin/views/postem_ipsum_settings.php:8
+msgid "Postem Ipsum :: Generic Posts"
+msgstr "Postem Ipsum :: Posts"
+
+#: admin/views/postem_ipsum_settings.php:15
+msgid "General Settings"
+msgstr "Ajustes Generales"
+
+#: admin/views/postem_ipsum_settings.php:21
+#: admin/views/postem_ipsum_terms_settings.php:21
+msgid "Select Post Type"
+msgstr "Seleccione Post Type"
+
+#: admin/views/postem_ipsum_settings.php:25
+#: admin/views/postem_ipsum_terms_settings.php:25
+msgid "Select a post type"
+msgstr "Seleccione un post type"
+
+#: admin/views/postem_ipsum_settings.php:42
+#: admin/views/postem_ipsum_terms_settings.php:40
+msgid "Select a taxonomy"
+msgstr "Seleccione una taxonomía"
+
+#: admin/views/postem_ipsum_settings.php:48
+msgid "Select Category/Term"
+msgstr "Seleccione término/categoría"
+
+#: admin/views/postem_ipsum_settings.php:52
+msgid "Select a term"
+msgstr "Seleccione un término"
+
+#: admin/views/postem_ipsum_settings.php:58
+msgid "Select Author"
+msgstr "Seleccione un autor"
+
+#: admin/views/postem_ipsum_settings.php:64
+msgid "Select an author"
+msgstr "Seleccione un autor"
+
+#: admin/views/postem_ipsum_settings.php:74
+msgid "How many posts"
+msgstr "Cuántos posts"
+
+#: admin/views/postem_ipsum_settings.php:85
+msgid "Post Content Settings"
+msgstr "Ajustes de Contenido del Post"
+
+#: admin/views/postem_ipsum_settings.php:92
+msgid "Paragraphs"
+msgstr "Párrafos"
+
+#: admin/views/postem_ipsum_settings.php:99
+msgid "The average length of a paragraph"
+msgstr "Longitud media de un párrafo"
+
+#: admin/views/postem_ipsum_settings.php:102
+#: admin/views/postem_ipsum_settings.php:114
+#: admin/views/postem_ipsum_settings.php:124
+#: admin/views/postem_ipsum_settings.php:134
+#: admin/views/postem_ipsum_settings.php:144
+#: admin/views/postem_ipsum_settings.php:154
+#: admin/views/postem_ipsum_settings.php:164
+#: admin/views/postem_ipsum_settings.php:174
+#: admin/views/postem_ipsum_settings.php:184
+#: admin/views/postem_ipsum_settings.php:206
+#: admin/views/postem_ipsum_settings.php:257
+#: admin/views/postem_ipsum_woo_settings.php:44
+#: admin/views/postem_ipsum_woo_settings.php:91
+#: admin/views/postem_ipsum_woo_settings.php:113
+#: admin/views/postem_ipsum_woo_settings.php:133
+#: admin/views/postem_ipsum_woo_settings.php:149
+#: admin/views/postem_ipsum_woo_settings.php:165
+#: admin/views/postem_ipsum_woo_settings.php:180
+#: admin/views/postem_ipsum_woo_settings.php:205
+#: admin/views/postem_ipsum_woo_settings.php:237
+msgid "Select an option"
+msgstr "Seleccione una opción"
+
+#: admin/views/postem_ipsum_settings.php:103
+#: admin/views/postem_ipsum_woo_settings.php:92
+#: admin/views/postem_ipsum_woo_settings.php:114
+msgid "Short"
+msgstr "Corta"
+
+#: admin/views/postem_ipsum_settings.php:104
+#: admin/views/postem_ipsum_woo_settings.php:93
+#: admin/views/postem_ipsum_woo_settings.php:115
+msgid "Medium"
+msgstr "Media"
+
+#: admin/views/postem_ipsum_settings.php:105
+#: admin/views/postem_ipsum_woo_settings.php:94
+#: admin/views/postem_ipsum_woo_settings.php:116
+msgid "Long"
+msgstr "Larga"
+
+#: admin/views/postem_ipsum_settings.php:106
+#: admin/views/postem_ipsum_woo_settings.php:95
+#: admin/views/postem_ipsum_woo_settings.php:117
+msgid "Very Long"
+msgstr "Muy larga"
+
+#: admin/views/postem_ipsum_settings.php:111
+msgid "Decorate text?"
+msgstr "Texto decorado?"
+
+#: admin/views/postem_ipsum_settings.php:115
+#: admin/views/postem_ipsum_settings.php:125
+#: admin/views/postem_ipsum_settings.php:135
+#: admin/views/postem_ipsum_settings.php:145
+#: admin/views/postem_ipsum_settings.php:155
+#: admin/views/postem_ipsum_settings.php:165
+#: admin/views/postem_ipsum_settings.php:175
+#: admin/views/postem_ipsum_settings.php:185
+#: admin/views/postem_ipsum_settings.php:207
+#: admin/views/postem_ipsum_settings.php:258
+#: admin/views/postem_ipsum_woo_settings.php:134
+#: admin/views/postem_ipsum_woo_settings.php:150
+#: admin/views/postem_ipsum_woo_settings.php:166
+#: admin/views/postem_ipsum_woo_settings.php:181
+#: admin/views/postem_ipsum_woo_settings.php:206
+#: admin/views/postem_ipsum_woo_settings.php:238
+msgid "Yes"
+msgstr "Sí"
+
+#: admin/views/postem_ipsum_settings.php:116
+#: admin/views/postem_ipsum_settings.php:126
+#: admin/views/postem_ipsum_settings.php:136
+#: admin/views/postem_ipsum_settings.php:146
+#: admin/views/postem_ipsum_settings.php:156
+#: admin/views/postem_ipsum_settings.php:166
+#: admin/views/postem_ipsum_settings.php:176
+#: admin/views/postem_ipsum_settings.php:186
+#: admin/views/postem_ipsum_settings.php:208
+#: admin/views/postem_ipsum_settings.php:259
+#: admin/views/postem_ipsum_woo_settings.php:135
+#: admin/views/postem_ipsum_woo_settings.php:151
+#: admin/views/postem_ipsum_woo_settings.php:167
+#: admin/views/postem_ipsum_woo_settings.php:182
+#: admin/views/postem_ipsum_woo_settings.php:207
+#: admin/views/postem_ipsum_woo_settings.php:239
+msgid "No"
+msgstr "No"
+
+#: admin/views/postem_ipsum_settings.php:121
+msgid "Links?"
+msgstr "Enlaces"
+
+#: admin/views/postem_ipsum_settings.php:131
+msgid "Unordered lists?"
+msgstr "Listas no ordenadas?"
+
+#: admin/views/postem_ipsum_settings.php:141
+msgid "Ordered lists?"
+msgstr "Listas ordenadas?"
+
+#: admin/views/postem_ipsum_settings.php:151
+msgid "Description lists?"
+msgstr "Listas descriptivas?"
+
+#: admin/views/postem_ipsum_settings.php:161
+msgid "Blockquotes?"
+msgstr "Blockquotes?"
+
+#: admin/views/postem_ipsum_settings.php:171
+msgid "Code?"
+msgstr "Código?"
+
+#: admin/views/postem_ipsum_settings.php:181
+msgid "Headers?"
+msgstr "Cabeceras?"
+
+#: admin/views/postem_ipsum_settings.php:197
+#: admin/views/postem_ipsum_woo_settings.php:196
+msgid "Comments Settings"
+msgstr "Ajustes de Comentarios"
+
+#: admin/views/postem_ipsum_settings.php:203
+#: admin/views/postem_ipsum_woo_settings.php:202
+msgid "Comments?"
+msgstr "Comentarios?"
+
+#: admin/views/postem_ipsum_settings.php:214
+#: admin/views/postem_ipsum_woo_settings.php:213
+msgid "How many comments"
+msgstr "Cuántos comentarios"
+
+#: admin/views/postem_ipsum_settings.php:227
+msgid "Meta fields Settings"
+msgstr "Ajustes de Metaboxes"
+
+#: admin/views/postem_ipsum_settings.php:247
+msgid "Featured Image Settings"
+msgstr "Ajustes de Imagen "
+
+#: admin/views/postem_ipsum_settings.php:254
+msgid "Featured Image?"
+msgstr "Imagen Destacada?"
+
+#: admin/views/postem_ipsum_settings.php:264
+#: admin/views/postem_ipsum_woo_settings.php:244
+msgid "Image Color"
+msgstr "Color de la imagen"
+
+#: admin/views/postem_ipsum_settings.php:275
+#: admin/views/postem_ipsum_woo_settings.php:254
+msgid "Image Width"
+msgstr "Ancho de imagen"
+
+#: admin/views/postem_ipsum_settings.php:283
+#: admin/views/postem_ipsum_woo_settings.php:261
+msgid "Image Height"
+msgstr "Alto de imagen"
+
+#: admin/views/postem_ipsum_settings.php:295
+#: admin/views/postem_ipsum_terms_settings.php:57
+#: admin/views/postem_ipsum_users_settings.php:48
+#: admin/views/postem_ipsum_woocommerce_orders_settings.php:31
+msgid "Generate"
+msgstr "Generar"
+
+#: admin/views/postem_ipsum_settings.php:296
+msgid "Delete all posts generated with Postem Ipsum"
+msgstr "Borrar todos los posts generados con Postem Ipsum"
+
+#: admin/views/postem_ipsum_terms_settings.php:8
+msgid "Postem Ipsum :: Terms and Categories"
+msgstr "Postem Ipsum :: Términos y Categorías"
+
+#: admin/views/postem_ipsum_terms_settings.php:14
+msgid "Taxonomy Terms Settings"
+msgstr "Ajustes de Taxonomías"
+
+#: admin/views/postem_ipsum_terms_settings.php:46
+msgid "How many terms/categories"
+msgstr "Cuántos términos/categorías"
+
+#: admin/views/postem_ipsum_terms_settings.php:58
+msgid "Delete all terms generated with Postem Ipsum"
+msgstr "Borrar todos los términos generados con Postem Ipsum"
+
+#: admin/views/postem_ipsum_users_settings.php:8
+msgid "Postem Ipsum :: Users"
+msgstr "Postem Ipsum :: Usuarios"
+
+#: admin/views/postem_ipsum_users_settings.php:14
+msgid "Users Settings"
+msgstr "Ajustes de Usuarios"
+
+#: admin/views/postem_ipsum_users_settings.php:21
+msgid "Select users role"
+msgstr "Seleccione rol de usuario"
+
+#: admin/views/postem_ipsum_users_settings.php:25
+msgid "Select a role"
+msgstr "Seleccione un role"
+
+#: admin/views/postem_ipsum_users_settings.php:37
+msgid "How many users"
+msgstr "Cuántos usuarios"
+
+#: admin/views/postem_ipsum_users_settings.php:49
+msgid "Delete all users generated with Postem Ipsum"
+msgstr "Borrar todos los usuarios generados con Postem Ipsum"
+
+#: admin/views/postem_ipsum_woo_settings.php:3
+msgid "Postem Ipsum :: Woocommerce Products"
+msgstr "Postem Ipsum ::  Productos Woocommerce "
+
+#: admin/views/postem_ipsum_woo_settings.php:10
+msgid "Woocommerce General Settings"
+msgstr "Ajustes Generales para Woocommerce"
+
+#: admin/views/postem_ipsum_woo_settings.php:16
+msgid "Select Product Category"
+msgstr "Seleccione Categoría de Producto"
+
+#: admin/views/postem_ipsum_woo_settings.php:33
+msgid "How many products"
+msgstr "Cuántos productos?"
+
+#: admin/views/postem_ipsum_woo_settings.php:41
+msgid "Variable or single?"
+msgstr "Variable o smple?"
+
+#: admin/views/postem_ipsum_woo_settings.php:45
+msgid "Simple"
+msgstr "Simple"
+
+#: admin/views/postem_ipsum_woo_settings.php:46
+msgid "Variable"
+msgstr "Variable"
+
+#: admin/views/postem_ipsum_woo_settings.php:52
+msgid "Select attribute"
+msgstr "Seleccione un atributo"
+
+#: admin/views/postem_ipsum_woo_settings.php:72
+msgid "Product Settings"
+msgstr "Ajustes de producto"
+
+#: admin/views/postem_ipsum_woo_settings.php:79
+msgid "Long description Paragraphs"
+msgstr "Párrafos de descripción larga"
+
+#: admin/views/postem_ipsum_woo_settings.php:87
+msgid "Long Description Average length"
+msgstr "Longitud de los párrafos de la descripción larga"
+
+#: admin/views/postem_ipsum_woo_settings.php:101
+msgid "Short description Paragraphs"
+msgstr "Párrafos de descripción corta"
+
+#: admin/views/postem_ipsum_woo_settings.php:109
+msgid "Short Description Average length"
+msgstr "Longitud de los párrafos de la descripción corta"
+
+#: admin/views/postem_ipsum_woo_settings.php:123
+msgid "Set min and max price"
+msgstr "Precio máximo y mínimo"
+
+#: admin/views/postem_ipsum_woo_settings.php:130
+msgid "Weight?"
+msgstr "Peso?"
+
+#: admin/views/postem_ipsum_woo_settings.php:146
+msgid "Length?"
+msgstr "Longitud?"
+
+#: admin/views/postem_ipsum_woo_settings.php:162
+msgid "Width?"
+msgstr "Ancho?"
+
+#: admin/views/postem_ipsum_woo_settings.php:177
+msgid "Height?"
+msgstr "Alto?"
+
+#: admin/views/postem_ipsum_woo_settings.php:227
+msgid "Product Image Settings"
+msgstr "Ajustes de la imagen de producto"
+
+#: admin/views/postem_ipsum_woo_settings.php:234
+msgid "Product Image?"
+msgstr "Imagen de producto?"
+
+#: admin/views/postem_ipsum_woo_settings.php:246
+msgid "Random: "
+msgstr "Aleatorio:"
+
+#: admin/views/postem_ipsum_woo_settings.php:271
+msgid "Generate products"
+msgstr "Generar productos"
+
+#: admin/views/postem_ipsum_woo_settings.php:272
+msgid "Delete all products generated with Postem Ipsum"
+msgstr "Borrar todos los productos generados con Postem Ipsum"
+
+#: admin/views/postem_ipsum_woocommerce_orders_settings.php:8
+msgid "Postem Ipsum :: Woocommerce Orders"
+msgstr "Postem Ipsum :: Órdenes de Compra Woocommerce"
+
+#: admin/views/postem_ipsum_woocommerce_orders_settings.php:14
+msgid "Woocommerce Orders Settings"
+msgstr "Ajustes Generales para Órdenes de compra de Woocommerce"
+
+#: admin/views/postem_ipsum_woocommerce_orders_settings.php:20
+msgid "How many orders"
+msgstr "Cuántas órdenes de compra"
+
+#: admin/views/postem_ipsum_woocommerce_orders_settings.php:32
+msgid "Delete all orders generated with Postem Ipsum"
+msgstr "Borrar todas las órdenes de compra generadas con Postem Ipsum"
+
+#~ msgid "General"
+#~ msgstr "General"

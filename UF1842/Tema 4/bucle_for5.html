@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+        }
+        td{
+            border: 1px solid #ccc;
+        }
+    </style>
+    <script>
+        filas = parseInt(window.prompt("Cuantas filas quieres?"));
+
+        columnas = parseInt(window.prompt("Cuantas columnas quieres?"));
+
+        document.write("<table>");
+            for(contador_filas = 0; contador_filas < filas; contador_filas++){
+            document.write("<tr>");
+                for(contador_columnas = 0; contador_columnas < columnas; contador_columnas++){
+                document.write("<td>HOLA HOLA</td>");
+                }
+            document.write("</tr>");
+            }
+        document.write("</table>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

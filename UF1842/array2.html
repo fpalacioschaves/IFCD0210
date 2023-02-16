@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function sumar(lista){
+            suma = 0;
+            for(posicion = 0; posicion < lista.length; posicion++){
+                suma = suma + lista[posicion]
+            }
+        
+            document.write("La suma es " + suma);
+        }
+
+        function pintar_pabajo(lista){
+            for(posicion = 0; posicion < lista.length; posicion++ ){
+                document.write(lista[posicion]);
+                document.write("<br>");
+            }
+        }
+
+
+        mi_lista = [1, 56, 84, 45, 65, 34, -452]
+        pintar_pabajo(mi_lista)
+        //sumar(mi_lista)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

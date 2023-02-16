@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="texto">
+        <input type="button" id="boton" value="Enviar">
+    </form>
+</body>
+
+<script>
+    texto = document.getElementById("texto")
+
+    texto.addEventListener("mouseover", resalta)
+    texto.addEventListener("mouseout", desresalta)
+    document.getElementById("boton").addEventListener("click", alertar)
+    
+    
+
+    function resalta(){
+        texto.style.fontWeight = "bold"
+    }
+
+    function desresalta(){       
+        texto.style.fontWeight = "normal"
+    }
+
+    function alertar(){
+
+        alert(texto.value)
+
+    }
+</script>
+</html>

@@ -1,0 +1,32 @@
+<html>
+	<head><title>jsClaseUser.html</title></head>
+	<body>
+
+<script>
+	function User(forename, username, password)
+	{
+		this.forename = forename
+		this.username = username
+		this.password = password
+		User.prototype.showUser = function() //this.showUser = showUser
+		{
+			document.write("Forename: " + this.forename + "<br>")
+			document.write("Username: " + this.username + "<br>")
+			document.write("Password: " + this.password + "<br>")
+		}
+	}
+	// Creación de objetos
+	details = new User()
+		details.forename = "Wolfgang"
+		details.username = "w.a.mozart"
+		details.password = "composer"
+		details.greeting = "Hello"
+	details.showUser()
+	document.write(details.greeting + "!, "+ details.forename)
+</script>
+
+		<noscript>
+			Este navegador no soporta JS o lo tiene desactivado.
+		</noscript>
+	</body>
+</html>

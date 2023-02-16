@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo" class="titulo" style="display: inline;">PEASO DE TITULO</h1>
+</body>
+
+<script>
+    titulo = document.getElementById("titulo")
+
+    titulo.addEventListener("mouseover", cambiar)
+
+    titulo.addEventListener("mouseout", descambiar)
+
+    function cambiar(){
+        titulo.style.backgroundColor = "blue"
+        titulo.style.color = "yellow"
+    }
+
+    function descambiar(){
+        titulo.style.backgroundColor = "white"
+        titulo.style.color = "black"
+    }
+
+</script>
+</html>

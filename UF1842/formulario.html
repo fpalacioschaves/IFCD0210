@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,select{
+            display: block;
+            border: 1px solid grey;
+            width: 200px;
+            padding: 5px;            
+        }
+
+        input.error{
+            border: 1px solid red;
+        }
+
+        span{
+            display: block;
+            font-size: small;
+            margin-bottom: 10px;
+        }
+
+        span.error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="formulario" action="" method="POST">
+        Nombre:<input type="text" name="nombre" id="nombre" required>
+
+        Sexo:
+        <select name="sexo" id="sexo">
+            <option value="h">Hombre</option>
+            <option value="m">Mujer</option>
+        </select> 
+
+        <input type="radio" name="colores" value="r">Color rojo
+        <input type="radio" name="colores" value="a">Color azul
+        <input type="radio" name="colores" value="v">Color verde
+
+        <hr>
+
+        <input type="checkbox" name="aficiones" value="leer">Leer
+        <input type="checkbox" name="aficiones" value="tv">Ver la tv
+        <input type="checkbox" name="aficiones" value="comer">Comer
+        <input type="checkbox" name="aficiones" value="dormir">Dormir
+        
+        <hr>
+        Dinos tu mensaje: 
+        <textarea name="comentarios" id="comentarios"></textarea>
+
+        <input type="button" name="enviar" id="enviar" onclick="mostrar_datos();" value="Enviar">
+    </form>    
+    
+</body>
+
+<script>
+
+    function mostrar_datos(){
+
+        // Recoger valor de un input. Caso A
+        nombre = document.getElementById("nombre").value; //directamente el valor
+        // Recoger valor de un input. Caso B
+        nombre = document.getElementById("nombre"); // Primero recojo el input
+        nombre_valor = nombre.value; // Recojo el valor del input
+        
+
+
+        //Recoger valor de un select
+        sexo = document.getElementById("sexo");// el select entero
+        sexo_valor = sexo.value; // el valor seleccionado
+        indice_seleccionado = sexo.selectedIndex; // el índice del option seleccionado
+        etiqueta_seleccionada = sexo.options[indice_seleccionado].text // la etiqueta del option seleccionado
+        
+        //Recoger el valor de un radio 
+        colores = document.getElementsByName("colores"); // usamos getElementsByName
+        
+        //Recorremos el array buscando el checked
+        for(indice = 0; indice < colores.length; indice++){
+
+            if(colores[indice].checked == true){
+                indice_Seleccionado = indice; // Guardo el indice del checkeado
+                color_seleccionado = colores[indice_Seleccionado].value; // valor del radio seleccionado
+            }
+        }
+       
+
+        // Reoger valores de un checkbox
+        aficiones = document.getElementsByName("aficiones"); // usamos getElementsByName
+
+        indices_aficiones_seleccionadas = new Array();
+        aficiones_seleccionadas = new Array();
+
+        //Recorremos el array buscando el checked
+        for(indice = 0; indice < aficiones.length; indice++){ // recorro el array
+
+            if(aficiones[indice].checked == true){ // si está checkeado
+                indices_aficiones_seleccionadas.push(indice); // guardo el índice
+                aficiones_seleccionadas.push(aficiones[indice].value)// Guardo el value de ese índice
+            }
+        }
+
+
+        //Recogemos el valor de un textarea
+        document.getElementById("comentarios").value = "HOLA METE AQUI TUS COMENTARIOS";
+
+        //document.getElementById("formulario").submit();
+
+        //document.getElementById("formulario").reset();
+        
+     
+    }
+
+    
+
+    
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+   
+    function cosas_de_palabras(){
+
+        mi_parrafo = window.prompt("Escribe el párrafo");
+
+        mi_array = mi_parrafo.split(" ");
+
+        // Numero de palabras
+        num_palabras = mi_array.length;
+        document.write("El párrafo tiene " + num_palabras + " palabras<br>")
+
+        // Primera palabra
+        document.write("La primera palabra es " + mi_array[0] + "<br>")
+
+        //Ultima palabra
+        document.write("La última palabra es " + mi_array[mi_array.length - 1] + "<br>")
+
+        // Ordenar inverso
+        document.write(mi_array.reverse().join(" ") + "<br>")
+        
+        // Ordenado alfabeticamente
+        document.write(mi_array.sort() + "<br>")
+
+        // Ordenar alfabeticamente pero a la inversa
+        document.write(mi_array.sort().reverse())
+
+
+    }
+
+    cosas_de_palabras()
+</script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Definir una función que muestre información sobre una cadena de texto que se le pasa como argumento. 
+        A partir de la cadena que se le pasa, la función determina si esa cadena está formada sólo por mayúsculas,
+        sólo por minúsculas o por una mezcla de ambas.
+    -->
+    
+</body>
+<script>
+
+    function comparacion(){
+        cadena = window.prompt("Dame la cadena a investigar")
+
+        cadena_may = cadena.toUpperCase();
+
+        cadena_min = cadena.toLowerCase();
+
+        if(cadena == cadena_may){
+            alert("Era solo mayúsculas")
+        }
+        else if(cadena == cadena_min){
+            alert("Era solo minúsculas")
+        }
+        else{
+            alert("Era una mezcla de mayúsculas y minúsculas")
+        }
+    }
+
+   
+    comparacion();
+
+</script>
+</html>

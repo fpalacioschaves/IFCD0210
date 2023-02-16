@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .normal{
+            display: block;
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            margin: 10px 0;
+            background-color: white;
+        }
+
+        .error{
+            display: block;
+            width: 300px;
+            padding: 5px;
+            margin: 10px 0;
+            border: 1px solid red;
+            background-color: pink;
+        }
+
+        #mensaje_error_nombre, #mensaje_error_apellidos, #mensaje_error_email,
+        #mensaje_error_email2{
+            color: red;
+            font-size: 12px;
+            display: none;
+            margin-bottom: 10px;
+        }
+    
+
+    </style>
+
+</head>
+
+
+
+
+<body>
+
+    <form name="formulario" id="formulario" action="" method="POST">
+
+        <label for="nombre">Nombre*:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" class="normal">
+        <span id="mensaje_error_nombre"></span>
+
+        <label for="apellidos">Apellidos*:</label>
+        <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" class="normal">
+        <span id="mensaje_error_apellidos">Este campo no puede estar vacío</span>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" name="telefono" id="telefono" placeholder="Tu teléfono" class="normal">
+       
+        <label for="email">Email*:</label>
+        <input type="text" name="email" id="email" placeholder="Tu email" class="normal">
+        <span id="mensaje_error_email">Este campo no puede estar vacío</span>
+        <span id="mensaje_error_email2">Debe ser un email válido</span>
+
+        Valora nuestro servicio de 0 a 10:
+        <br>
+        <input type="radio" name="valoracion" value="0" checked>0
+        <input type="radio" name="valoracion" value="1">1
+        <input type="radio" name="valoracion" value="2">2
+        <input type="radio" name="valoracion" value="3">3
+        <input type="radio" name="valoracion" value="4">4
+        <input type="radio" name="valoracion" value="5">5
+        <input type="radio" name="valoracion" value="6">6
+        <input type="radio" name="valoracion" value="7">7
+        <input type="radio" name="valoracion" value="8">8
+        <input type="radio" name="valoracion" value="9">9
+        <input type="radio" name="valoracion" value="10">10
+        <br><br>
+        Sexo:
+        <select name="sexo" id="sexo" class="normal">
+            <option value="-1" selected>Por favor, seleccione un valor</option>
+            <option value="h">Hombre</option>
+            <option value="m">Mujer</option>
+        </select>
+        <br>
+        <input type="button" name="enviar" id="enviar" value="Enviar" class="normal">
+
+        <input type="button" name="limpiar" id="limpiar" value="Reset" class="normal">
+    </form>
+
+</body>
+
+<script>
+    document.getElementById("limpiar").addEventListener("click",limpiar);
+
+    document.getElementById("enviar").addEventListener("click",verificar);
+
+    function verificar_nombre(){
+        // Recogemos el valor del campo nombre
+        campo_nombre = document.getElementById("nombre");
+        valor_nombre = campo_nombre.value;
+        
+        // El nombre no puede estar vacio
+        if(valor_nombre == ""){
+           campo_nombre.className="error";
+           document.getElementById("mensaje_error_nombre").innerHTML="Este campo no puede estar vacio";
+            verificado_nombre = false;
+        }
+        else{
+            campo_nombre.className="normal";
+            document.getElementById("mensaje_error_nombre").innerHTML=""
+            verificado_nombre = true;
+        }
+
+        return(verificado_nombre)
+    }
+
+    function verificar_apellido(){
+        // Recogemos el valor de los apellidos
+        campo_apellidos = document.getElementById("apellidos");
+        valor_apellidos = campo_apellidos.value;
+
+        // Comprobar que no está vacío
+        if(valor_apellidos == ""){
+            campo_apellidos.className="error";
+            document.getElementById("mensaje_error_apellidos").style.display="block";
+            verificado_apellidos = false;
+        }
+        else{
+            campo_apellidos.className="normal";
+            document.getElementById("mensaje_error_apellidos").style.display="none";
+            verificado_apellidos = true;
+         }
+
+         return verificar_apellido;
+    }
+    
+    function verificar_email(){
+        // Recoger el valor del email
+        campo_email = document.getElementById("email");
+        valor_email = campo_email.value;
+
+        // Comprobar si el email está vacío
+        if(valor_email == ""){
+            campo_email.className="error";
+            document.getElementById("mensaje_error_email").style.display="block";
+            verificado_email = false;
+        }
+        else{
+            campo_email.className="normal";
+            document.getElementById("mensaje_error_email").style.display="none";
+            verificado_email = true;
+        }
+
+        // Comprobar si tiene una @
+        if(valor_email.indexOf("@") == -1){
+            campo_email.className="error";
+            document.getElementById("mensaje_error_email2").style.display="block"
+            verificado_email = false;
+        }
+        else{
+            campo_email.className="normal";
+            document.getElementById("mensaje_error_email2").style.display="none"
+            verificado_email = true;
+        }
+        return verificar_email;
+    }
+    
+    function verificar_sexo(){
+        //Recoger el valor del select
+        campo_sexo = document.getElementById("sexo");
+        valor_sexo = campo_sexo.value;
+        if(valor_sexo == "-1"){
+            alert("Por favor elija una opción")
+            verificado_sexo = false;
+        }
+        else{
+            verificado_sexo = true;
+        }
+        return verificado_sexo;
+    }
+    
+    
+    function verificar(){
+
+        verificado_nombre = verificar_nombre();
+        verificado_apellidos = verificar_apellido();
+        verificado_email = verificar_email();
+        verificado_sexo = verificar_sexo();
+        
+
+        //Recoger el valor del radio 
+        valoracion = document.getElementsByName("valoracion");
+        //Recorremos el array buscando el checked
+        for(indice = 0; indice < valoracion.length; indice++){
+
+            if(valoracion[indice].checked == true){
+                indice_Seleccionado = indice; // Guardo el indice del checkeado
+                valoracion_seleccionado = valoracion[indice_Seleccionado].value; // valor del radio seleccionado
+            }
+        }
+
+        
+        // Si todo está chachi, enviamos el formulario
+        if(verificado_nombre && verificado_apellidos && verificado_email && verificado_sexo){
+            document.getElementById("formulario").submit();
+        }
+    }
+
+    function limpiar(){
+        document.getElementById("formulario").reset();
+        document.getElementById("nombre").focus();
+    }
+
+</script>
+</html>

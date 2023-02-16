@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cuadrado{
+            width: 300px;
+            height: 300px;
+            margin: 10px auto;
+            font-size: 50px;
+            font-weight: bold;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="cuadrado" id="cuadrado">
+        1
+    </div>
+</body>
+<script>
+    cuadrado = document.getElementById("cuadrado");
+
+    //Eventos
+    cuadrado.addEventListener("click",sumar)
+    cuadrado.addEventListener("dblclick",duplicar)
+
+
+    // Funciones llamadas por los eventos
+    function duplicar(){
+        numerito = parseInt(cuadrado.innerHTML);
+        numerito = numerito * 2;
+        cuadrado.innerHTML = numerito;
+    }
+
+    function sumar(){
+        numerito = parseInt(cuadrado.innerHTML);
+        numerito = numerito + 2
+        cuadrado.innerHTML = numerito;
+    }
+
+    
+
+
+   
+</script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // funcion que me pregunte por 5 numeros
+
+    function pedir_numeros(){
+        numeros = [];   
+        for(contador = 1; contador < 6; contador++){
+            numeros.push(parseInt(window.prompt("Dame un numero")));
+        }
+        return numeros;
+    }
+    //resultado = pedir_numeros();
+    //document.write(resultado)
+
+    // Función que me pregunte por X números
+    function pedir_numeros2(){
+        cantidad = parseInt(window.prompt("Cuantos pido"))
+        numeros = [];   
+        for(contador = 0; contador < cantidad; contador++){
+            numeros.push(parseInt(window.prompt("Dame un numero")));
+        }
+        return numeros;
+
+    }
+
+    //numeros = pedir_numeros2()
+    //document.write(numeros)
+
+    // Igual que los casos anteriores, pero 
+    // pide números hasta que le meto una cadena
+    // vacia
+
+    function pedir_numeros3(){
+        numeros = [];
+        do{
+            numero = window.prompt("Dame un numero o nada para parar")
+            numeros.push(parseInt(numero))
+        }while(numero != "")
+        
+        return numeros
+    }
+
+    document.write(pedir_numeros3())
+
+</script>
+</html>

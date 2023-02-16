@@ -1,0 +1,264 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: postem-ipsum\n"
+"POT-Creation-Date: 2018-05-07 11:19+0200\n"
+"PO-Revision-Date: 2018-05-07 11:19+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/postem-ipsum-admin.php:93 admin/postem-ipsum-admin.php:94
+msgid "General"
+msgstr ""
+
+#: admin/views/postem_ipsum_get_taxonomies.php:1
+#: admin/views/postem_ipsum_settings.php:35
+msgid "Select Taxonomy"
+msgstr ""
+
+#: admin/views/postem_ipsum_get_terms.php:1
+msgid "Select Term/Category"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:8
+#: admin/views/postem_ipsum_woo_settings.php:3
+msgid "Postem Ipsum"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:14
+msgid "General Settings"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:20
+msgid "Select Post Type"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:24
+msgid "Select a post type"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:39
+msgid "Select a taxonomy"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:45
+msgid "Select Category/Term"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:49
+msgid "Select a term"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:54
+msgid "How many posts"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:63
+msgid "Post Content Settings"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:70
+msgid "Paragraphs"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:77
+msgid "The average length of a paragraph"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:80
+#: admin/views/postem_ipsum_settings.php:92
+#: admin/views/postem_ipsum_settings.php:102
+#: admin/views/postem_ipsum_settings.php:112
+#: admin/views/postem_ipsum_settings.php:122
+#: admin/views/postem_ipsum_settings.php:132
+#: admin/views/postem_ipsum_settings.php:142
+#: admin/views/postem_ipsum_settings.php:152
+#: admin/views/postem_ipsum_settings.php:162
+#: admin/views/postem_ipsum_settings.php:182
+#: admin/views/postem_ipsum_woo_settings.php:59
+#: admin/views/postem_ipsum_woo_settings.php:80
+#: admin/views/postem_ipsum_woo_settings.php:109
+msgid "Select an option"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:81
+#: admin/views/postem_ipsum_woo_settings.php:60
+#: admin/views/postem_ipsum_woo_settings.php:81
+msgid "Short"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:82
+#: admin/views/postem_ipsum_woo_settings.php:61
+#: admin/views/postem_ipsum_woo_settings.php:82
+msgid "Medium"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:83
+#: admin/views/postem_ipsum_woo_settings.php:62
+#: admin/views/postem_ipsum_woo_settings.php:83
+msgid "Long"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:84
+#: admin/views/postem_ipsum_woo_settings.php:63
+#: admin/views/postem_ipsum_woo_settings.php:84
+msgid "Very Long"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:89
+msgid "Decorate text?"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:93
+#: admin/views/postem_ipsum_settings.php:103
+#: admin/views/postem_ipsum_settings.php:113
+#: admin/views/postem_ipsum_settings.php:123
+#: admin/views/postem_ipsum_settings.php:133
+#: admin/views/postem_ipsum_settings.php:143
+#: admin/views/postem_ipsum_settings.php:153
+#: admin/views/postem_ipsum_settings.php:163
+#: admin/views/postem_ipsum_settings.php:183
+#: admin/views/postem_ipsum_woo_settings.php:110
+msgid "Yes"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:94
+#: admin/views/postem_ipsum_settings.php:104
+#: admin/views/postem_ipsum_settings.php:114
+#: admin/views/postem_ipsum_settings.php:124
+#: admin/views/postem_ipsum_settings.php:134
+#: admin/views/postem_ipsum_settings.php:144
+#: admin/views/postem_ipsum_settings.php:154
+#: admin/views/postem_ipsum_settings.php:164
+#: admin/views/postem_ipsum_settings.php:184
+#: admin/views/postem_ipsum_woo_settings.php:111
+msgid "No"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:99
+msgid "Links?"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:109
+msgid "Unordered lists?"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:119
+msgid "Ordered lists?"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:129
+msgid "Description lists?"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:139
+msgid "Blockquotes?"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:149
+msgid "Code?"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:159
+msgid "Headers?"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:172
+msgid "Featured Image Settings"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:179
+msgid "Featured Image?"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:189
+#: admin/views/postem_ipsum_woo_settings.php:116
+msgid "Image Color"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:191
+#: admin/views/postem_ipsum_woo_settings.php:18
+msgid "Random"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:200
+#: admin/views/postem_ipsum_woo_settings.php:126
+msgid "Image Width"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:208
+#: admin/views/postem_ipsum_woo_settings.php:133
+msgid "Image Height"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:218
+msgid "Generate"
+msgstr ""
+
+#: admin/views/postem_ipsum_settings.php:219
+msgid "Delete all posts generated with Postem Ipsum"
+msgstr ""
+
+#: admin/views/postem_ipsum_woo_settings.php:10
+msgid "Woocommerce General Settings"
+msgstr ""
+
+#: admin/views/postem_ipsum_woo_settings.php:16
+msgid "Select Product Category"
+msgstr ""
+
+#: admin/views/postem_ipsum_woo_settings.php:32
+msgid "How many products"
+msgstr ""
+
+#: admin/views/postem_ipsum_woo_settings.php:41
+msgid "Product Settings"
+msgstr ""
+
+#: admin/views/postem_ipsum_woo_settings.php:48
+msgid "Long description Paragraphs"
+msgstr ""
+
+#: admin/views/postem_ipsum_woo_settings.php:55
+msgid "Long Description Average length"
+msgstr ""
+
+#: admin/views/postem_ipsum_woo_settings.php:69
+msgid "Short description Paragraphs"
+msgstr ""
+
+#: admin/views/postem_ipsum_woo_settings.php:76
+msgid "Short Description Average length"
+msgstr ""
+
+#: admin/views/postem_ipsum_woo_settings.php:90
+msgid "Set min and max price"
+msgstr ""
+
+#: admin/views/postem_ipsum_woo_settings.php:99
+msgid "Product Image Settings"
+msgstr ""
+
+#: admin/views/postem_ipsum_woo_settings.php:106
+msgid "Product Image?"
+msgstr ""
+
+#: admin/views/postem_ipsum_woo_settings.php:118
+msgid "Random: "
+msgstr ""
+
+#: admin/views/postem_ipsum_woo_settings.php:143
+msgid "Generate products"
+msgstr ""
+
+#: admin/views/postem_ipsum_woo_settings.php:144
+msgid "Delete all products generated with Postem Ipsum"
+msgstr ""
