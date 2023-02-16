@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Decodifica un objeto en JSON</title>
+<script type="application/javascript">
+var http_request = new XMLHttpRequest();
+var url = "http://localhost:8888/respuestajson.php"; // Esta URL debería devolver datos JSON
+ 
+// Descarga los datos JSON del servidor.
+http_request.onreadystatechange = manejaJSON;
+http_request.open("GET", url, true);
+http_request.send(null);
+function manejaJSON() {
+	if (http_request.readyState == 4) {
+		if (http_request.status == 200) {
+			var cadCodificadaJSON = http_request.responseText; 
+			var objDatos = eval("(" + cadCodificadaJSON + ")"); //Creamos el objeto utilizando la cadena codificada
+			//Ahora con el objeto desplegamos los datos mandados desde el servidor
+			document.getElementById("divId").innerHTML = objDatos.id;
+			document.getElementById("divNombre").innerHTML = objDatos.nombre;
+			document.getElementById("divCategoria").innerHTML = objDatos.categoria;
+			document.getElementById("divPrecio").innerHTML = objDatos.precioDeSalida;
+			document.getElementById("divDetalles").innerHTML = objDatos.detalles[0] + ", " + objDatos.detalles[1] + ", " + objDatos.detalles[2];
+		} else {
+			alert("Ocurrio un problema con la URL.");
+		}
+		http_request = null;
+	}
+}
+</script>
+</head>
+<body>
+<h2>Producto</h2>
+<div id="divId"></div>
+<div id="divNombre"></div>
+<div id="divCategoria"></div>
+<div id="divPrecio"></div>
+<div id="divDetalles"></div>
+</body>
+</html>
