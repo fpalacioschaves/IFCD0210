@@ -785,6 +785,7 @@ if (!class_exists('EasyFiltering_Public')) {
 
             global $wpdb;
 
+           
 
             $args = array();
 
@@ -948,7 +949,7 @@ if (!class_exists('EasyFiltering_Public')) {
                 }
             }
 
-           // echo $include_url;
+            //echo $include_url;
 
             if ($filter_query->have_posts()) {
 

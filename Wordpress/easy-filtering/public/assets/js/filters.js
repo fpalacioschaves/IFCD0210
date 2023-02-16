@@ -551,9 +551,11 @@
         };
 
 
+
         $.post(PublicGlobal.ajax_url, data, function (res) {
 
             var render = $(res);
+           
 
             var current_slug = window.location.href.split('?')[0];
 
@@ -750,7 +752,7 @@
         location.queryString = {};
         var post_type;
         var terms = "";
-        location.search.substring(1).split("&").forEach(function (pair) {
+        location.search.substr(1).split("&").forEach(function (pair) {
             if (pair === "") {
 
                 return;
