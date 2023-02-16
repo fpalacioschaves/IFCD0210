@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        array_ejemplo = [34,56, 65, 2, 3, 67, 42];
+
+        var resultado = media_array(array_ejemplo);
+
+        alert("La media del array es  " + resultado);
+
+
+        function media_array( myarray ) {
+
+            var longitud = myarray.length;
+
+            var suma = 0;
+
+            for( contador = 0 ; contador < longitud ; contador++) {
+
+                suma = suma + myarray[contador];
+
+            }
+
+            var media = suma / longitud;
+
+            return media;
+
+        }
+
+    </script>
+    
+</body>
+</html>

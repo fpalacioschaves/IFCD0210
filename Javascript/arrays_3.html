@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form id="dni">
+
+        <label for "numero">Número del DNI</label>
+        <input type="text" id="numero">
+
+        <label for "letra">Letra del DNI</label>
+        <input type="text" id="letra">
+
+        <input type="button" value="Comprobar" onclick="check_dni();">
+
+
+    </form>
+
+    <script>
+
+        function check_dni(){
+
+            array_letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+       
+            numero_dni = document.getElementById("numero").value;
+
+            letra_dni = document.getElementById("letra").value.toUpperCase();
+
+            indice = numero_dni % 23;
+
+            letra_calculada = array_letras[indice];
+
+            if( letra_dni == letra_calculada){
+
+                alert("DNI correcto");
+
+            }
+            else{
+
+                alert("Cogedlo. Es falso");
+            }
+       
+       
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

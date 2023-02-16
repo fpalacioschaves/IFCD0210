@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        class Alumno {
+            constructor(nombre,nota){
+                this.nombre = nombre;
+                this.nota = nota;
+            }
+
+            dar_info(){
+                alert(
+                    "Nombre del alumno: " + this.nombre+
+                    "\nNota del alumno: " + this.nota
+                );
+            }
+
+            checkear_aprobado(){
+                if(this.nota >= 5 ){
+                    alert("Has aprobado");
+                }
+                else{
+                    alert("Lo siento, has suspendido");
+                }
+            }
+        }
+
+        alumno_nuevo = new Alumno("Manolo", 8)
+
+        alumno_nuevo.dar_info();
+        
+        alumno_nuevo.checkear_aprobado();
+
+    </script>
+    
+</body>
+</html>
