@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<biblioteca>
+   <libro>
+      <titulo>El Príncipe y el Mendigo</titulo>
+      <autor>Mark Twain</autor>
+      <anio>1881</anio>
+      <descripcion>Un relato de aventuras y comedia que sigue a dos huérfanos, un príncipe y un mendigo, que cambian sus identidades y viven sus vidas en la pobreza y la riqueza.</descripcion>
+      <palabrasClave>Huerfanos, cambio de identidad, aventuras, comedia</palabrasClave>
+   </libro>
+   <libro>
+      <titulo>Orgullo y Prejuicio</titulo>
+      <autor>Jane Austen</autor>
+      <anio>1813</anio>
+      <descripcion>Una novela sobre la vida de la familia Bennet y sus cinco hijas en el condado de Hertfordshire, Inglaterra.</descripcion>
+      <palabrasClave>Familia, amor, matrimonio, sociedad</palabrasClave>
+   </libro>
+</biblioteca>

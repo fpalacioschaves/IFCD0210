@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--This is an XML document-->
+<root>
+    <child1 attribute1="value1" attribute2="value2">
+    </child1>
+    <child2 attribute1="value3" attribute2="value4">
+    </child2>
+</root>

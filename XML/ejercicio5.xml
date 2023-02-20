@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rootElement>
+    <childElement1 attr1="value1" attr2="value2">
+        <![CDATA[This is a CDATA section containing data that should not be parsed by the XML parser.]]>
+    </childElement1>
+    <childElement2 attr3="value3" attr4="value4" />
+</rootElement>
